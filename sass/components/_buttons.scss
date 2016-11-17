@@ -1,0 +1,27 @@
+/*========================
+	COMPONENTS - BUTTONS
+=========================*/
+.x-btn {
+	font-family: $font-mont;
+	font-style: normal;
+	letter-spacing: 0.03em;
+	width: 20%;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	
+	&:hover {
+		background-color: white !important;
+		color: $orange;
+	}
+}
+
+
+.x-btn.-secondary {
+	border-color: $orange;
+	color: $orange;
+	
+	&:hover {
+		background-color: $orange !important;
+		color: white;
+	}
+}

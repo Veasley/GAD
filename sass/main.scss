@@ -1,0 +1,45 @@
+/*!
+
+Theme Name: X &ndash; Child Theme
+Theme URI: http://theme.co/x/
+Author: Themeco
+Author URI: http://theme.co/
+Description: Make all of your modifications to X in this child theme.
+Version: 1.0.0
+Template: x
+
+*/
+
+
+/*!VARIABLES*/
+@import 'variables/_colors';
+@import 'variables/_typography';
+@import 'variables/_asset-paths';
+
+
+/*!UNIVERSAL*/
+@import 'universal/_mixins';
+@import 'universal/_site';
+@import 'universal/_typography';
+@import 'universal/_helper-classes';
+
+
+/*!CORE*/
+@import 'core/_header';
+@import 'core/_footer';
+@import 'core/_nav';
+
+
+/*!COMPONENTS*/
+@import 'components/_buttons';
+@import 'components/_feature-box';
+
+
+/*!PAGES*/
+@import 'pages/_home';
+
+
+/*!POST TYPES*/
+@import 'posts/_archive-feed';
+@import 'posts/_single-post';
+@import 'posts/_sidebar';

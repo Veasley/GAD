@@ -1,0 +1,68 @@
+/* =============================
+	   Structure Mixins
+=============================== */
+
+//Center any element
+@mixin center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//vertically center any element (Check browser compatability)
+@mixin vert-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* =============================
+	RESPONSIVE MIXINS
+=============================== */
+
+// media queries
+@mixin responsive($media) {
+	@if $media == l-laptop {
+		@media only screen and (max-width: 1440px) { @content; }
+	}
+	@else if $media == m-laptop {
+		@media only screen and (max-width: 1400px) { @content; }
+	}
+	@else if $media == laptop {
+		@media only screen and (max-width: 1280px) { @content; }
+	}
+	@else if $media == s-laptop {
+		@media only screen and (max-width: 1200px) { @content; }
+	}
+	@else if $media == xl-tablet {
+		@media only screen and (max-width: 1024px) { @content; }
+	}
+	@else if $media == l-tablet {
+		@media only screen and (max-width: 979px) { @content; }
+	}
+	@else if $media == m-tablet {
+		@media only screen and (max-width: 880px) { @content; }
+	}
+	@else if $media == tablet {
+		@media only screen and (max-width: 768px) { @content; }
+	}
+	@else if $media == x-tablet {
+		@media only screen and (max-width: 767px) { @content; }
+	}
+	@else if $media == l-phone {
+		@media only screen and (max-width: 600px) { @content; }
+	}
+	@else if $media == phone {
+		@media only screen and (max-width: 480px) { @content; }
+	}
+	@else if $media == s-phone {
+		@media only screen and (max-width: 320px) { @content; }
+	}
+}
+
+// allow for any number to be used
+@mixin media($size: 1) {
+	@media only screen and (max-width:$size) { @content ;}
+}

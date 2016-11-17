@@ -1,0 +1,57 @@
+/*========================
+	NAVIGATION
+=========================*/
+
+//Removing circular border around links
+.x-navbar .desktop .x-nav>.current-menu-item>a>span,
+.x-navbar .desktop .x-nav a:hover {
+	border: none;
+}
+
+
+/*//SHRINKING NAVIGATION BAR
+.x-navbar-fixed-top,
+.x-navbar-wrap {
+	//box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	transition: all 0.5s ease-in-out;
+	height: 70px !important;
+	background-color: rgba(255,255,255, .9) !important;
+	border-bottom: 1px solid #cccccc !important;
+	
+	@include media(1200px) {
+		height: auto !important;
+		background-color: rgb(255,255,255) !important;
+		box-shadow: none;
+	}
+	
+	.x-navbar-inner {
+		
+	/*	.desktop .x-nav > li > a {
+			padding-top: 35px;
+			height: 83px;
+			
+			@include media(1200px) {
+				padding-top: auto; 
+				height: auto;
+			}
+		}
+		
+		.x-brand {
+			margin-top: 5px !important;
+			
+			@include media(1200px) {
+				margin-top: 15px !important;
+			}
+		} 
+		
+		.x-brand img {
+			width: 160px;
+			
+			/*@include media(1200px) {
+				width: 350px;
+			}
+		}
+	}
+	
+
+}*/

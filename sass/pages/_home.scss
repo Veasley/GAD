@@ -1,0 +1,28 @@
+/*========================
+	  HOME HERO
+=========================*/
+#home {
+	
+	&.bg-image {
+		background-position: top center !important;
+	}
+	
+	.x-text {
+		font-size: 18px !important;
+		letter-spacing: 1px;
+	}
+}
+
+
+
+#about {
+	
+	.img-left {
+		background-image: url('http://veasleydesign.dev/wp-content/uploads/2016/06/computer-desk.png');
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-ms-background-size: cover;
+		background-size: cover;
+	}
+}
