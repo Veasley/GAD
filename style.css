@@ -13,9 +13,13 @@ Template: x
 /*========================
 	VARIABLES - COLORS
 =========================*/
-@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic,700italic);
+/*@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://allfont.net/allfont.css?fonts=montserrat-hairline);
+
+$font-pt: 'PT Serif', serif;
+$font-mont: 'Montserrat', sans-serif;
+$font-mont-thin: 'Montserrat Hairline', sans-serif;*/
 /*!UNIVERSAL*/
 /* =============================
 	   Structure Mixins
@@ -27,55 +31,17 @@ Template: x
 	UNIVERSAL - SITE
 =========================*/
 body {
-  font-family: 'PT Serif', serif !important;
-  font-weight: lighter !important;
-  font-style: italic !important; }
+  /*font-family: 'PT Serif', serif !important;
+	font-weight: lighter !important;
+	font-style: italic !important;*/ }
 
 /*========================
 	UNIVERSAL - FONTS
 =========================*/
 h1 {
-  font-size: 260% !important;
-  line-height: 45px !important;
-  letter-spacing: 0.01em !important;
-  font-weight: 900 !important; }
-  h1.-white {
-    color: white; }
-
-h2 {
-  font-size: 30px !important; }
-
-.x-text {
-  line-height: 28px; }
-  .x-text > h1.-orange, .x-text h2.-orange, .x-text h3.-orange, .x-text h4.-orange, .x-text h5.-orange, .x-text h6.-orange {
-    color: #ff9900; }
-  .x-text > h1.-white, .x-text h2.-white, .x-text h3.-white, .x-text h4.-white, .x-text h5.-white, .x-text h6.-white {
-    color: white; }
-  .x-text.-l-grey {
-    color: #a1a1a1; }
-  .x-text.-grey {
-    color: #7d7d7d; }
-  .x-text.-white {
-    color: white; }
-  .x-text.-bar {
-    font-size: 18px !important;
-    line-height: 22px; }
-    .x-text.-bar h2 {
-      font-size: 36px !important;
-      margin-top: 0;
-      margin-bottom: 18px; }
-    .x-text.-bar::after {
-      content: '';
-      position: relative;
-      display: block;
-      height: 4px;
-      width: 86px;
-      margin-top: 18px !important;
-      margin-bottom: 45px;
-      background-color: #707070; }
-  .x-text.-bar.-secondary::after {
-    margin-left: auto;
-    margin-right: auto; }
+  font-size: 150.4% !important;
+  margin-top: 0 !important;
+  letter-spacing: 2px !important; }
 
 /*========================
 	UNIVERSAL - FONTS
@@ -137,109 +103,48 @@ h2 {
 /*========================
 	NAVIGATION HEADER
 =========================*/
-.x-navbar {
-  border-top: 5px solid #ff9900; }
-
 /*========================
 	NAVIGATION
 =========================*/
-.x-navbar .desktop .x-nav > .current-menu-item > a > span,
-.x-navbar .desktop .x-nav a:hover {
-  border: none; }
+.x-navbar .desktop .x-nav > li > a {
+  height: 78px !important; }
+  .x-navbar .desktop .x-nav > li > a:hover {
+    box-shadow: 0 4px 0 0 #a7c49e !important; }
 
-/*//SHRINKING NAVIGATION BAR
-.x-navbar-fixed-top,
-.x-navbar-wrap {
-	//box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
-	transition: all 0.5s ease-in-out;
-	height: 70px !important;
-	background-color: rgba(255,255,255, .9) !important;
-	border-bottom: 1px solid #cccccc !important;
-	
-	@include media(1200px) {
-		height: auto !important;
-		background-color: rgb(255,255,255) !important;
-		box-shadow: none;
-	}
-	
-	.x-navbar-inner {
-		
-	/*	.desktop .x-nav > li > a {
-			padding-top: 35px;
-			height: 83px;
-			
-			@include media(1200px) {
-				padding-top: auto; 
-				height: auto;
-			}
-		}
-		
-		.x-brand {
-			margin-top: 5px !important;
-			
-			@include media(1200px) {
-				margin-top: 15px !important;
-			}
-		} 
-		
-		.x-brand img {
-			width: 160px;
-			
-			/*@include media(1200px) {
-				width: 350px;
-			}
-		}
-	}
-	
+.x-navbar .desktop .x-nav > .current-menu-item > a {
+  box-shadow: 0 4px 0 0 #a7c49e !important; }
 
-}*/
 /*!COMPONENTS*/
 /*========================
 	COMPONENTS - BUTTONS
 =========================*/
-.x-btn {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  width: 20%;
-  padding-top: 16px;
-  padding-bottom: 16px; }
-  .x-btn:hover {
-    background-color: white !important;
-    color: #ff9900; }
-
-.x-btn.-secondary {
-  border-color: #ff9900;
-  color: #ff9900; }
-  .x-btn.-secondary:hover {
-    background-color: #ff9900 !important;
-    color: white; }
-
 /*========================
 COMPONENTS - FEATURE BOX
 =========================*/
-.x-feature-box .x-feature-box-title {
-  font-size: 18px !important; }
-
-.x-feature-box .x-feature-box-text {
-  color: #a1a1a1; }
-
 /*!PAGES*/
 /*========================
-	  HOME HERO
+	  HOMEPAGE
 =========================*/
-#home.bg-image {
-  background-position: top center !important; }
+#latest-posts h1 {
+  background-color: #ececec;
+  margin-bottom: 0 !important;
+  padding: 15px 30px !important; }
 
-#home .x-text {
-  font-size: 18px !important;
-  letter-spacing: 1px; }
-
-#about .img-left {
-  background-image: url("http://veasleydesign.dev/wp-content/uploads/2016/06/computer-desk.png");
-  background-repeat: no-repeat;
-  -ms-background-size: cover;
-  background-size: cover; }
+.x-author-box {
+  border: none;
+  background-color: #ececec; }
+  .x-author-box p:first-of-type {
+    width: 100%;
+    text-align: center;
+    margin-bottom: em(8) !important; }
+    .x-author-box p:first-of-type .avatar {
+      float: none;
+      border-radius: 50%;
+      width: 50%; }
+  .x-author-box .x-author-info {
+    margin-left: 0; }
+    .x-author-box .x-author-info .h-author {
+      font-size: 18px;
+      text-align: center; }
 
 /*!POST TYPES*/
-/*# sourceMappingURL=style.css.map */

@@ -6,14 +6,9 @@
 // H1
 //========================
 h1 {
-	font-size: 260% !important;
-	line-height: 45px !important; 
-	letter-spacing: 0.01em !important;
-	font-weight: 900 !important;
-	
-	&.-white {
-		color: white;
-	}
+    font-size: 150.4% !important;
+	margin-top: 0 !important;
+    letter-spacing: 2px !important;
 }
 
 
@@ -22,7 +17,7 @@ h1 {
 // H2
 //========================
 h2 {
-	font-size: 30px !important;
+	//font-size: 30px !important;
 	
 }
 
@@ -53,69 +48,7 @@ h4 {
 //========================
 
 .x-text {
-	line-height: 28px;
 	
-	> h1,h2,h3,h4,h5,h6 {
-		
-		&.-orange {
-			color: $orange;
-		}
-		
-		&.-white {
-			color: white;
-		}
-	}
-	
-	
-	&.-l-grey {
-		color: $l-grey;
-	}
-	
-	
-	&.-grey {
-		color: $grey;
-	}
-	
-	
-	&.-white {
-		color: white;
-	}
-	
-	
-	&.-bar {
-		font-size: 18px !important;
-		line-height: 22px;
-		
-		h2 {
-			font-size: 36px !important;
-			margin-top: 0;
-			margin-bottom: 18px;
-		}
-		
-		
-		&::after {
-			content: '';
-			position: relative;
-			display: block;
-			height: 4px;
-			width: 86px;
-			margin-top: 18px !important;
-			margin-bottom: 45px;
-			background-color: $d-grey;
-		}
-		
-	}
-	
-	
-	&.-bar.-secondary {
-		
-		&::after {
-			margin-left: auto;
-			margin-right: auto;
-		}
-		
-	}
-		
 
 }
 
