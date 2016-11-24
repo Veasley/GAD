@@ -13,13 +13,12 @@ Template: x
 /*========================
 	VARIABLES - COLORS
 =========================*/
-/*@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic,700italic);
+/*====================================
+GLOBAL FONTS - ADDED GOOGLE FONTS
+====================================*/
+@import url(https://fonts.googleapis.com/css?family=PT+Serif:400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://allfont.net/allfont.css?fonts=montserrat-hairline);
-
-$font-pt: 'PT Serif', serif;
-$font-mont: 'Montserrat', sans-serif;
-$font-mont-thin: 'Montserrat Hairline', sans-serif;*/
 /*!UNIVERSAL*/
 /* =============================
 	   Structure Mixins
@@ -31,9 +30,9 @@ $font-mont-thin: 'Montserrat Hairline', sans-serif;*/
 	UNIVERSAL - SITE
 =========================*/
 body {
-  /*font-family: 'PT Serif', serif !important;
-	font-weight: lighter !important;
-	font-style: italic !important;*/ }
+  font-family: 'PT Serif', serif !important;
+  font-weight: lighter !important;
+  font-style: italic !important; }
 
 /*========================
 	UNIVERSAL - FONTS
@@ -118,33 +117,150 @@ h1 {
 /*========================
 	COMPONENTS - BUTTONS
 =========================*/
+.x-btn {
+  font-family: futura, sans-serif;
+  font-style: normal;
+  padding: 16px 30px !important;
+  letter-spacing: 2px;
+  font-size: 18px !important; }
+  .x-btn:hover {
+    background-color: #a7c49e !important; }
+
 /*========================
 COMPONENTS - FEATURE BOX
 =========================*/
 /*!PAGES*/
-/*========================
-	  HOMEPAGE
-=========================*/
-#latest-posts h1 {
+/*=============================
+	       HOMEPAGE
+=============================*/
+#latest-post h1 {
   background-color: #ececec;
   margin-bottom: 0 !important;
   padding: 15px 30px !important; }
 
-.x-author-box {
+#gad-sidebar .x-author-box {
   border: none;
-  background-color: #ececec; }
-  .x-author-box p:first-of-type {
-    width: 100%;
-    text-align: center;
-    margin-bottom: em(8) !important; }
-    .x-author-box p:first-of-type .avatar {
-      float: none;
-      border-radius: 50%;
-      width: 50%; }
-  .x-author-box .x-author-info {
+  background-color: #ececec;
+  text-align: center;
+  padding: 0 0 35px !important; }
+  #gad-sidebar .x-author-box > p {
+    margin: 0 35px 15px !important; }
+  #gad-sidebar .x-author-box .h-about-the-author {
+    background-image: url("/wp-content/uploads/2016/11/gad-logo-white.png");
+    background-size: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #e7e318;
+    border-bottom: 0;
+    padding: 30px;
+    text-indent: -99999px; }
+  #gad-sidebar .x-author-box .h-author {
+    display: none; }
+  #gad-sidebar .x-author-box .avatar {
+    float: none;
+    border-radius: 50%;
+    width: 50%; }
+  #gad-sidebar .x-author-box .x-author-info {
     margin-left: 0; }
-    .x-author-box .x-author-info .h-author {
+    #gad-sidebar .x-author-box .x-author-info .h-author {
       font-size: 18px;
       text-align: center; }
+  #gad-sidebar .x-author-box .p-author {
+    padding: 0 40px 15px;
+    font-size: 16px !important;
+    line-height: 22px; }
+  #gad-sidebar .x-author-box p > a {
+    font-size: 16px !important;
+    cursor: pointer; }
+    #gad-sidebar .x-author-box p > a:hover {
+      color: #dfb2c4;
+      text-decoration: underline; }
+
+.x-main .widget > .h-widget {
+  border: none !important;
+  background-color: #e7e318;
+  padding: 15px;
+  color: white; }
+
+#text-4 {
+  height: 320px;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+  border: none !important;
+  background-color: #ececec; }
+  #text-4 .textwidget {
+    padding: 15px; }
+  #text-4 .bwfbfeedcontent {
+    font-family: 'PT Serif', serif !important;
+    font-weight: lighter !important;
+    font-style: italic !important; }
+  #text-4 .bw-fb-feed-element .media-object {
+    width: 60px; }
+  #text-4 ul > li {
+    line-height: 20px; }
+    #text-4 ul > li:first-of-type {
+      font-size: 18px; }
+  #text-4 .feed-text {
+    margin-bottom: 15px; }
+  #text-4 .read-button:hover {
+    color: #dfb2c4;
+    text-decoration: underline; }
+
+#text-3 {
+  background-color: #ececec; }
+  #text-3 .textwidget {
+    padding: 15px; }
+
+#recent-posts-3 {
+  background-color: #ececec; }
+  #recent-posts-3 ul {
+    padding: 15px; }
+    #recent-posts-3 ul > li {
+      font-size: 16px !important;
+      line-height: 18px;
+      padding: 15px 0; }
+      #recent-posts-3 ul > li > a:hover {
+        color: #dfb2c4;
+        text-decoration: underline; }
+  #recent-posts-3 .post-date {
+    font-size: 13px !important; }
+
+#home-cta .x-column.x-1-3 {
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-blend-mode: overlay;
+  opacity: .9;
+  height: 260px; }
+  #home-cta .x-column.x-1-3:hover {
+    background-blend-mode: multiply; }
+    #home-cta .x-column.x-1-3:hover h4 {
+      height: 80px; }
+      #home-cta .x-column.x-1-3:hover h4 > span > a {
+        color: white;
+        padding: 30px; }
+  #home-cta .x-column.x-1-3 h4 {
+    margin: 0 !important;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(167, 196, 156, 0.8);
+    width: 100%;
+    height: 60px;
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transtion: all 0.15s linear; }
+    #home-cta .x-column.x-1-3 h4 > span > a {
+      padding: 20px 30px;
+      display: block; }
+
+#home-cta .bars-restaurant {
+  background-image: url("/wp-content/uploads/2016/11/bar2.jpg"); }
+
+#home-cta .salons-spas {
+  background-image: url("/wp-content/uploads/2016/11/salon1.jpg"); }
+
+#home-cta .shopping {
+  background-image: url("/wp-content/uploads/2016/11/shopping2.jpg"); }
 
 /*!POST TYPES*/

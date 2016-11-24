@@ -1,8 +1,11 @@
-/*========================
-	  HOMEPAGE
-=========================*/
+/*=============================
+	       HOMEPAGE
+=============================*/
 
-#latest-posts {
+
+//LATEST POSTS BLOG
+//===============================
+#latest-post {
     
     h1 {
         background-color: $l-grey;
@@ -13,37 +16,274 @@
 
 
 
-#page-sidebar {
-    //background-color: $l-grey !important;
-}
-
-
-
-.x-author-box {
-    border: none;
-    background-color: $l-grey;
+//SIDEBAR
+//===============================
+#gad-sidebar {
     
-    p:first-of-type {
-        width: 100%;
+    //Author box
+    //=====================
+    .x-author-box {
+        border: none;
+        background-color: $l-grey;
         text-align: center;
-        margin-bottom: em(8) !important;
+        padding: 0 0 35px !important;
         
+        > p {
+           margin: 0 35px 15px !important;
+        }
+        
+
+        //Author title
+        .h-about-the-author {
+            background-image: url("/wp-content/uploads/2016/11/gad-logo-white.png");
+            -webkit-background-size: 80%;
+            -moz-background-size: 80%;
+            background-size: 80%;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-color: $yellow;
+            border-bottom: 0;
+            padding: 30px;
+            text-indent: -99999px;
+        }
+        
+        
+        //Author
+        .h-author {
+            display: none;
+        }
+        
+        
+        //Avatar
         .avatar {
             float: none;
             border-radius: 50%;
             width: 50%;
         }
-    }
-    
-    
-    .x-author-info {
-        margin-left: 0;
         
-        .h-author {
-            font-size: 18px;
-            text-align: center;
+        
+        //Author info
+        .x-author-info {
+            margin-left: 0;
+
+            .h-author {
+                font-size: 18px;
+                text-align: center;
+            }
+        }
+        
+        
+        //Author description
+        .p-author {
+            padding: 0 40px 15px;
+            font-size: 16px !important;
+            line-height: 22px;
+        }
+        
+        //Author links
+        p > a {
+            font-size: 16px !important;
+            cursor: pointer;
+            
+            &:hover {
+                color: $pink;
+                text-decoration: underline;
+            }
         }
     }
+   
+}
+
+
+
+
+//Widget headers
+//==============================
+.x-main .widget {
+    
+    > .h-widget {
+        border: none !important;
+        background-color: $yellow;
+        padding: 15px;
+        color: white;
+    }
+    
+}
+
+
+
+
+//Facebook
+//===============================
+#text-4 {
+    height: 320px;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    border: none !important;
+    background-color: $l-grey;
+
+    
+    .textwidget {
+        padding: 15px;
+    }
+    
+    //Container
+    .bwfbfeedcontent {
+        font-family: 'PT Serif', serif !important;
+	   font-weight: lighter !important;
+	   font-style: italic !important;
+    }
+    
+    
+    //Facebook user
+    .bw-fb-feed-element .media-object {
+        width: 60px;
+    }
+    
+    
+    //Title and days
+    ul {
+        
+        > li {
+            line-height: 20px;
+            
+            &:first-of-type {
+                font-size: 18px;
+            }
+        }
+    }
+    
+    
+    //Feed text
+    .feed-text {
+        margin-bottom: 15px;
+    }
+    
+    //Read more button
+    .read-button {
+
+        &:hover {
+            color: $pink;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+
+
+//Instagram
+//===============================
+#text-3 {
+  background-color: $l-grey;  
+    
+    .textwidget {
+        padding: 15px;
+    }
+}
+
+
+
+
+//Recent Posts
+//===========================
+#recent-posts-3 {
+    background-color: $l-grey;
+    
+    //Post links
+    ul {
+       padding: 15px; 
+        
+        > li {
+            font-size: 16px !important;
+            line-height: 18px;
+            padding: 15px 0;
+            
+            > a {
+                
+                &:hover {
+                    color: $pink;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    
+    //Post Date
+    .post-date {
+        font-size: 13px !important;
+    }
+}
+
+
+
+
+
+//BARS, SALONS, SHOPPING
+//===============================
+#home-cta {
+    
+    .x-column.x-1-3 {
+        position: relative;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; 
+        background-blend-mode: overlay;
+        opacity: .9;
+        height: 260px;
         
         
+        &:hover {
+            background-blend-mode: multiply;
+            
+            h4 {
+                height: 80px;
+                
+                > span > a {
+                    color: white;
+                    padding: 30px;
+                }
+            }
+            
+        }
+    
+        
+        h4 {
+            margin: 0 !important;
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(167, 196, 156, .8);
+            width: 100%;
+            height: 60px;
+            -webkit-transition: all 0.15s linear;
+            -moz-transition: all 0.15s linear;
+            transtion: all 0.15s linear;
+            
+            > span > a {
+                padding: 20px 30px;
+                display: block;
+            }
+        }
+    }
+    
+    
+    //Bars & Restuarants
+    .bars-restaurant {
+        background-image: url("/wp-content/uploads/2016/11/bar2.jpg");
+    }
+    
+    
+    //Salons & Spas
+    .salons-spas {
+        background-image: url("/wp-content/uploads/2016/11/salon1.jpg");
+    }
+    
+    
+    //Shopping
+    .shopping {
+        background-image: url("/wp-content/uploads/2016/11/shopping2.jpg");
+    }
 }

@@ -2,10 +2,14 @@
 	COMPONENTS - BUTTONS
 =========================*/
 .x-btn {
-	
+	font-family: futura, sans-serif;
+    font-style: normal;
+    padding: 16px 30px !important;
+    letter-spacing: 2px;
+    font-size: 18px !important;
 	
 	&:hover {
-		
+		background-color: $mint !important;
 	}
 }
 
