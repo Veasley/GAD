@@ -1,0 +1,50 @@
+/*=============================
+	   POST GALLERY
+=============================*/
+
+//Latest Post on Homepage
+#grid-37 .tg-item-content-holder {
+    position: absolute;
+    bottom: 30px;
+    
+    .empty-heart {
+        display: none !important;
+    }
+}
+
+article {
+    
+    .tg-item-date,
+    .tg-cats-holder,
+    .tg-item-term {
+        color: $pink !important;
+    }
+    
+    //Post Summary
+    .tg-item-content-holder {
+        text-align: left;
+        
+        //Title and read more links
+        .tg-item-title a,
+        .tg-item-read-more a {
+            
+            &:hover {
+                color: $mint;
+            } 
+        }
+        
+        
+        //Excerpt
+        > p.tg-item-excerpt {
+            font-size: 15px !important;
+            line-height: 22px;
+        }
+        
+        
+        //Hiding author and number of comments
+        > .tg-item-footer {
+            display: none !important;
+        }
+        
+    }
+}

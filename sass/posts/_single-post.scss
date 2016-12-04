@@ -1,0 +1,12 @@
+/*===========================
+	   SINGLE POSTS
+============================*/
+
+.single-post .x-main.left .hentry .entry-featured {
+    margin-top: 0 !important;
+    
+    > .entry-thumb img {
+        width: 100%;
+        height: auto;
+    }
+}

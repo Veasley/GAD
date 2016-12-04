@@ -2,8 +2,18 @@
 	NAVIGATION
 =========================*/
 
+//Navigation bar
+.x-navbar-wrap {
+    margin-bottom: 0 !important;
+    
+    > .x-navbar {
+        border-bottom: 1px solid $l-grey;
+    }
+}
+
+
 .x-navbar .desktop .x-nav > li > a {
-    height: 78px !important;
+    height: 77px !important;
     
     &:hover {
         box-shadow: 0 4px 0 0 $mint !important;

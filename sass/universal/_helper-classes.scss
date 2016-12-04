@@ -107,6 +107,10 @@
 
 // PADDING
 //========================
+_mobile-padding {
+    padding-top: em(45) !important;
+    padding-bottom: em(45) !important;
+}
 
 
 
@@ -119,4 +123,29 @@
 ._center {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+
+// GRADIENT OVERLAY
+//========================
+._before {
+    position: relative;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+._before._overlay-grey {
+    
+    &::before {
+        background-color: rgba($grey, .8);
+    }
 }
