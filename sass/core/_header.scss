@@ -1,6 +1,15 @@
 /*========================
 	  PAGE HEADER
 =========================*/
+
+
+//Hiding blog header
+.home .blog-header {
+    display: none !important;
+}
+
+//Homepage Hero
+//======================
 #home-hero {
     background-position: center left !important;
     
@@ -48,4 +57,39 @@
         color: $pink;
         font-size: 200% !important;
     }
+}
+
+
+
+
+//Inner page Hero
+//======================
+.inner-page-hero {
+    
+    h1 {
+        text-transform: none !important;
+        letter-spacing: normal !important;
+        line-height: 1;
+        padding: 30px 0 !important;
+        
+        &::after {
+            margin-left: 0;
+            content: '';
+            position: relative;
+            width: 75px;
+            height: 3px;
+            background-color: white;
+            display: block;
+            margin-top: 30px;
+        }
+    }
+    
+    
+    .text,
+    .typed-cursor {
+        font-family: $font-pt;
+        color: $pink;
+        font-size: 180% !important;
+    }
+    
 }

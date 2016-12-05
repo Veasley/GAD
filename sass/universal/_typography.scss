@@ -8,7 +8,6 @@
 h1 {
     font-size: 300% !important;//150.4% !important;
 	margin-top: 0 !important;
-   // letter-spacing: 2px !important;
 }
 
 
@@ -17,8 +16,13 @@ h1 {
 // H2
 //========================
 h2 {
-	//font-size: 30px !important;
 	
+    &.h4 {
+        background-color: $l-grey;
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+        padding: 15px 30px !important;
+    }
 }
 
 
@@ -27,6 +31,7 @@ h2 {
 //H3
 //========================
 h3 {
+    font-size: 160% !important;
 	
 }
 

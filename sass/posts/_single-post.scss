@@ -2,11 +2,87 @@
 	   SINGLE POSTS
 ============================*/
 
+
+//Featured Image
+//====================
 .single-post .x-main.left .hentry .entry-featured {
     margin-top: 0 !important;
     
     > .entry-thumb img {
         width: 100%;
         height: auto;
+    }
+}
+
+
+//Title
+h1.entry-title {
+    font-size: 190% !important;
+    line-height: 1.1 !important;
+}
+
+
+//Article Nav
+.x-nav-articles > a {
+    border-color: $mint !important;
+    
+    &:hover {
+        background-color: $mint !important;
+        
+        > i {
+            color: white;
+        }
+    }
+    
+    > i {
+        color: $mint;
+    }
+}
+
+
+
+
+//Comments
+//========================
+#comments {
+    
+    //Comments
+    .h-comments-title > span {
+        font-size: 80% !important;
+    }
+    
+    
+    //Leave a comment
+    #reply-title > span {
+        font-size: 60% !important;
+    }
+    
+    
+    //Submit Commet Button
+    #entry-comment-submit {
+        padding: 16px 30px !important;
+        
+        &:hover {
+            background-color: $mint !important;
+        }
+    }
+    
+    
+    // Time
+    time {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    
+    //Author name
+    .x-comment-author {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    
+    
+    //Comments
+    .x-comment-content {
+        line-height: 1.4;
     }
 }

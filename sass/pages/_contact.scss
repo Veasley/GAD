@@ -1,6 +1,22 @@
 /*========================
 	  CONTACT
 =========================*/
-#contact {
-	
+
+//Field lables
+.name_first,
+.name_last {
+    
+    > label {
+        display: none !important;
+    }
+}
+
+//Submit button
+#gform_submit_button_1 {
+    
+    padding: 16px 30px !important;
+        
+    &:hover {
+        background-color: $mint !important;
+    }
 }

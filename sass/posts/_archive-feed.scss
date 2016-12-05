@@ -2,15 +2,32 @@
 	   POST GALLERY
 =============================*/
 
+
+//POST ON HOMEPAGE
+//=========================
+
 //Latest Post on Homepage
-#grid-37 .tg-item-content-holder {
-    position: absolute;
-    bottom: 30px;
+#grid-37 {
+    margin-bottom: 30px;
+    height: 360px;
     
-    .empty-heart {
-        display: none !important;
+    article.tg-post-1 {
+        height: 360px !important;
     }
+    
+    //.tg-item-media-inner:hover {
+//background-color: rgba(0,0,0,0.75);        
+        
+        
+        .tg-item-overlay:hover {
+            background-color: rgba(0,0,0,0.75);
+          //  opacity: .9;
+        }
+        
+        
+   // }
 }
+
 
 article {
     
@@ -48,3 +65,68 @@ article {
         
     }
 }
+
+
+
+//BLOG PAGE
+//=========================
+.blog,
+.single-post {
+    
+    .entry-title {
+        font-size: 130%;
+        line-height: 1.5;
+    }
+    
+    
+    .p-meta {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+    
+    .entry-content {
+        font-size: 16px !important;
+        line-height: 1.5;
+    }
+}
+
+
+//Welcome World Post
+#post-1 {
+    
+    //Change meta text to pink
+    .featured-meta {
+        color: $pink;
+    }
+    
+    
+    //Remove view post button
+    .featured-view {
+        display: none !important;
+    }
+}
+
+
+
+//PAGINATION
+//=========================
+.x-pagination {
+    
+    a {
+        
+        &:hover {
+            background-color: $mint !important;
+        }
+    }
+    
+    
+    //Active page
+    span {
+        
+        &.current {
+            background-color: $mint !important;
+        }
+    }
+    
+}
+

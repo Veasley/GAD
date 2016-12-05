@@ -88,7 +88,7 @@
     h4.h-widget {
         border: none !important;
         background-color: $yellow;
-        padding: 15px;
+        padding: 15px !important;
         color: white;
     }
     
@@ -99,7 +99,8 @@
 
 //Facebook
 //===============================
-#text-4 {
+#text-4,
+#text-9 {
     height: 320px;
     overflow-y: scroll;
     margin-bottom: 30px;
@@ -158,8 +159,13 @@
 
 //Instagram
 //===============================
-#text-3 {
+#text-3,
+#text-8 {
   background-color: $l-grey;  
+    
+    h3 {
+        font-size: 16px !important;
+    }
     
     .textwidget {
         padding: 15px;
@@ -171,7 +177,9 @@
 
 //Recent Posts
 //===========================
-#recent-posts-3 {
+#recent-posts-3,
+#recent-posts-5,
+#recent-posts-6 {
     background-color: $l-grey;
     
     //Post links

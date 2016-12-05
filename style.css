@@ -44,6 +44,15 @@ h1 {
   font-size: 300% !important;
   margin-top: 0 !important; }
 
+h2.h4 {
+  background-color: #ececec;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 15px 30px !important; }
+
+h3 {
+  font-size: 160% !important; }
+
 /*========================
 	UNIVERSAL - FONTS
 =========================*/
@@ -122,6 +131,9 @@ _mobile-padding {
 /*========================
 	  PAGE HEADER
 =========================*/
+.home .blog-header {
+  display: none !important; }
+
 #home-hero {
   background-position: center left !important; }
   #home-hero h1 {
@@ -158,6 +170,27 @@ _mobile-padding {
     color: #dfb2c4;
     font-size: 200% !important; }
 
+.inner-page-hero h1 {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  line-height: 1;
+  padding: 30px 0 !important; }
+  .inner-page-hero h1::after {
+    margin-left: 0;
+    content: '';
+    position: relative;
+    width: 75px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    margin-top: 30px; }
+
+.inner-page-hero .text,
+.inner-page-hero .typed-cursor {
+  font-family: "PT Serif", serif;
+  color: #dfb2c4;
+  font-size: 180% !important; }
+
 /*=============================
 	       FOOTER
 =============================*/
@@ -166,7 +199,7 @@ _mobile-padding {
   padding: 3% 0 !important; }
   .x-colophon.top .widget h4.h-widget {
     background-color: transparent !important;
-    padding: 0;
+    padding: 0 !important;
     font-size: 105.6% !important; }
   .x-colophon.top a {
     color: white; }
@@ -219,12 +252,6 @@ COMPONENTS - FEATURE BOX
 /*=============================
 	       HOMEPAGE
 =============================*/
-#latest-post h2.h4 {
-  background-color: #ececec;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 15px 30px !important; }
-
 #home-cta .x-column.x-1-3 {
   position: relative;
   background-size: cover;
@@ -263,15 +290,35 @@ COMPONENTS - FEATURE BOX
 #home-cta .shopping {
   background-image: url("/wp-content/uploads/2016/11/shopping2.jpg"); }
 
+/*=============================
+	     ABOUT PAGE
+=============================*/
+.about-gad {
+  font-size: 16px !important; }
+
+/*========================
+	  CONTACT
+=========================*/
+.name_first > label,
+.name_last > label {
+  display: none !important; }
+
+#gform_submit_button_1 {
+  padding: 16px 30px !important; }
+  #gform_submit_button_1:hover {
+    background-color: #a7c49e !important; }
+
 /*!POST TYPES*/
 /*=============================
 	   POST GALLERY
 =============================*/
-#grid-37 .tg-item-content-holder {
-  position: absolute;
-  bottom: 30px; }
-  #grid-37 .tg-item-content-holder .empty-heart {
-    display: none !important; }
+#grid-37 {
+  margin-bottom: 30px;
+  height: 360px; }
+  #grid-37 article.tg-post-1 {
+    height: 360px !important; }
+  #grid-37 .tg-item-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.75); }
 
 article .tg-item-date,
 article .tg-cats-holder,
@@ -289,6 +336,33 @@ article .tg-item-content-holder {
   article .tg-item-content-holder > .tg-item-footer {
     display: none !important; }
 
+.blog .entry-title,
+.single-post .entry-title {
+  font-size: 130%;
+  line-height: 1.5; }
+
+.blog .p-meta,
+.single-post .p-meta {
+  font-size: 14px;
+  letter-spacing: 1px; }
+
+.blog .entry-content,
+.single-post .entry-content {
+  font-size: 16px !important;
+  line-height: 1.5; }
+
+#post-1 .featured-meta {
+  color: #dfb2c4; }
+
+#post-1 .featured-view {
+  display: none !important; }
+
+.x-pagination a:hover {
+  background-color: #a7c49e !important; }
+
+.x-pagination span.current {
+  background-color: #a7c49e !important; }
+
 /*===========================
 	   SINGLE POSTS
 ============================*/
@@ -297,6 +371,41 @@ article .tg-item-content-holder {
   .single-post .x-main.left .hentry .entry-featured > .entry-thumb img {
     width: 100%;
     height: auto; }
+
+h1.entry-title {
+  font-size: 190% !important;
+  line-height: 1.1 !important; }
+
+.x-nav-articles > a {
+  border-color: #a7c49e !important; }
+  .x-nav-articles > a:hover {
+    background-color: #a7c49e !important; }
+    .x-nav-articles > a:hover > i {
+      color: white; }
+  .x-nav-articles > a > i {
+    color: #a7c49e; }
+
+#comments .h-comments-title > span {
+  font-size: 80% !important; }
+
+#comments #reply-title > span {
+  font-size: 60% !important; }
+
+#comments #entry-comment-submit {
+  padding: 16px 30px !important; }
+  #comments #entry-comment-submit:hover {
+    background-color: #a7c49e !important; }
+
+#comments time {
+  font-size: 12px;
+  letter-spacing: 1px; }
+
+#comments .x-comment-author {
+  font-size: 16px;
+  letter-spacing: 1px; }
+
+#comments .x-comment-content {
+  line-height: 1.4; }
 
 /*=============================
 	       SIDEBAR
@@ -352,48 +461,71 @@ article .tg-item-content-holder {
 .widget h4.h-widget {
   border: none !important;
   background-color: #e7e318;
-  padding: 15px;
+  padding: 15px !important;
   color: white; }
 
-#text-4 {
+#text-4,
+#text-9 {
   height: 320px;
   overflow-y: scroll;
   margin-bottom: 30px;
   border: none !important;
   background-color: #ececec; }
-  #text-4 .textwidget {
+  #text-4 .textwidget,
+  #text-9 .textwidget {
     padding: 15px; }
-  #text-4 .bwfbfeedcontent {
+  #text-4 .bwfbfeedcontent,
+  #text-9 .bwfbfeedcontent {
     font-family: 'PT Serif', serif !important;
     font-weight: lighter !important;
     font-style: italic !important; }
-  #text-4 .bw-fb-feed-element .media-object {
+  #text-4 .bw-fb-feed-element .media-object,
+  #text-9 .bw-fb-feed-element .media-object {
     width: 60px; }
-  #text-4 ul > li {
+  #text-4 ul > li,
+  #text-9 ul > li {
     line-height: 20px; }
-    #text-4 ul > li:first-of-type {
+    #text-4 ul > li:first-of-type,
+    #text-9 ul > li:first-of-type {
       font-size: 18px; }
-  #text-4 .feed-text {
+  #text-4 .feed-text,
+  #text-9 .feed-text {
     margin-bottom: 15px; }
-  #text-4 .read-button:hover {
+  #text-4 .read-button:hover,
+  #text-9 .read-button:hover {
     color: #dfb2c4;
     text-decoration: underline; }
 
-#text-3 {
+#text-3,
+#text-8 {
   background-color: #ececec; }
-  #text-3 .textwidget {
+  #text-3 h3,
+  #text-8 h3 {
+    font-size: 16px !important; }
+  #text-3 .textwidget,
+  #text-8 .textwidget {
     padding: 15px; }
 
-#recent-posts-3 {
+#recent-posts-3,
+#recent-posts-5,
+#recent-posts-6 {
   background-color: #ececec; }
-  #recent-posts-3 ul {
+  #recent-posts-3 ul,
+  #recent-posts-5 ul,
+  #recent-posts-6 ul {
     padding: 15px; }
-    #recent-posts-3 ul > li {
+    #recent-posts-3 ul > li,
+    #recent-posts-5 ul > li,
+    #recent-posts-6 ul > li {
       font-size: 16px !important;
       line-height: 18px;
       padding: 15px 0; }
-      #recent-posts-3 ul > li > a:hover {
+      #recent-posts-3 ul > li > a:hover,
+      #recent-posts-5 ul > li > a:hover,
+      #recent-posts-6 ul > li > a:hover {
         color: #dfb2c4;
         text-decoration: underline; }
-  #recent-posts-3 .post-date {
+  #recent-posts-3 .post-date,
+  #recent-posts-5 .post-date,
+  #recent-posts-6 .post-date {
     font-size: 13px !important; }
