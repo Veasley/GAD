@@ -29,6 +29,19 @@
 }
 
 
+
+//Latest Blog Post on Homepage
+#grid-63 {
+    
+    //Homepage categories
+    .tg-cats-holder {
+        display: none;
+    }
+    
+}
+
+
+
 article {
     
     .tg-item-date,
@@ -36,6 +49,8 @@ article {
     .tg-item-term {
         color: $pink !important;
     }
+    
+  
     
     //Post Summary
     .tg-item-content-holder {

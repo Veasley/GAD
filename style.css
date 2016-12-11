@@ -232,6 +232,11 @@ _mobile-padding {
 .x-navbar .desktop .x-nav > .current-menu-item > a {
   box-shadow: 0 4px 0 0 #a7c49e !important; }
 
+.menu-item-has-children > .sub-menu {
+  display: block;
+  top: 80px !important;
+  box-shadow: none !important; }
+
 /*!COMPONENTS*/
 /*========================
 	COMPONENTS - BUTTONS
@@ -319,6 +324,9 @@ COMPONENTS - FEATURE BOX
     height: 360px !important; }
   #grid-37 .tg-item-overlay:hover {
     background-color: rgba(0, 0, 0, 0.75); }
+
+#grid-63 .tg-cats-holder {
+  display: none; }
 
 article .tg-item-date,
 article .tg-cats-holder,
