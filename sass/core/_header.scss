@@ -3,11 +3,6 @@
 =========================*/
 
 
-//Hiding blog header
-.home .blog-header {
-    display: none !important;
-}
-
 //Homepage Hero
 //======================
 #home-hero {
@@ -90,6 +85,18 @@
         font-family: $font-pt;
         color: $pink;
         font-size: 180% !important;
+    }
+    
+}
+
+
+
+//Header Typer
+//=================================
+.x-text-type {
+    
+    > .text {
+        
     }
     
 }

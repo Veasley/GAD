@@ -131,9 +131,6 @@ _mobile-padding {
 /*========================
 	  PAGE HEADER
 =========================*/
-.home .blog-header {
-  display: none !important; }
-
 #home-hero {
   background-position: center left !important; }
   #home-hero h1 {
@@ -232,10 +229,44 @@ _mobile-padding {
 .x-navbar .desktop .x-nav > .current-menu-item > a {
   box-shadow: 0 4px 0 0 #a7c49e !important; }
 
-.menu-item-has-children > .sub-menu {
-  display: block;
-  top: 80px !important;
-  box-shadow: none !important; }
+/*========================
+   MOBILE NAVIGATION
+=========================*/
+.x-btn-navbar {
+  color: #dfb2c4 !important; }
+  .x-btn-navbar:hover, .x-btn-navbar:focus {
+    color: #a7c49e !important; }
+
+.x-navbar .mobile .x-nav li > a {
+  background-color: #eee !important; }
+
+@media only screen and (max-width: 1080px) {
+  .x-btn-navbar {
+    display: block;
+    float: right; }
+  .x-nav-wrap.desktop {
+    display: none !important; }
+  .x-nav-wrap.mobile.in {
+    display: block; } }
+
+@media only screen and (max-width: 420px) {
+  .x-brand {
+    float: none;
+    text-align: center; }
+  .x-navbar .mobile .x-nav {
+    margin-top: 0 !important; }
+  .masthead-inline .x-btn-navbar {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    float: none;
+    text-align: center; }
+    .masthead-inline .x-btn-navbar > .x-icon-bars {
+      background-color: #dfb2c4;
+      color: white;
+      width: 100%;
+      padding: 5px; }
+      .masthead-inline .x-btn-navbar > .x-icon-bars:hover {
+        background-color: #a7c49e; } }
 
 /*!COMPONENTS*/
 /*========================

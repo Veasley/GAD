@@ -3,7 +3,6 @@
 =========================*/
 
 //Navigation bar
-//======================
 .x-navbar-wrap {
     margin-bottom: 0 !important;
     
@@ -23,16 +22,4 @@
 
 .x-navbar .desktop .x-nav > .current-menu-item > a {
     box-shadow: 0 4px 0 0 $mint !important;
-}
-
-
-//Sub Navigation
-//=========================
-.menu-item-has-children {
-    
-    > .sub-menu {
-        display: block;
-        top: 80px !important;
-        box-shadow: none !important;
-    }
 }

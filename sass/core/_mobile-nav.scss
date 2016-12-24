@@ -1,0 +1,80 @@
+/*========================
+   MOBILE NAVIGATION
+=========================*/
+
+//Mobile Icons
+//===================
+.x-btn-navbar {
+    color: $pink !important;
+    
+    &:hover,
+    &:focus {
+        color: $mint !important;
+    }
+}
+
+
+//Background link colors
+//==============================
+.x-navbar .mobile .x-nav li > a {
+    background-color: #eee !important;
+}
+
+
+
+//Displaying mobile menu 
+//================================
+@include media(1080px) {
+    
+    .x-btn-navbar {
+        display: block;
+        float: right;
+    }
+    
+    
+    .x-nav-wrap.desktop {
+        display: none !important;
+    }
+    
+    
+    .x-nav-wrap.mobile.in {
+        display: block;
+    }
+}
+
+
+
+@include media(420px) {
+    
+    //Logo
+    //=============
+    .x-brand {
+        float: none;
+        text-align: center;
+    }
+    
+    
+    .x-navbar .mobile .x-nav {
+        margin-top: 0 !important;
+    }
+    
+    
+    .masthead-inline .x-btn-navbar {
+        margin-top: 12px;
+        margin-bottom: 15px;
+        float: none;
+        text-align: center;
+        
+        > .x-icon-bars {
+            background-color: $pink;
+            color: white;
+            width: 100%;
+            padding: 5px;
+            
+            &:hover {
+                background-color: $mint;
+            }
+        }
+    }
+    
+}
