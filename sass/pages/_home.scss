@@ -2,6 +2,74 @@
 	       HOMEPAGE
 =============================*/
 
+//Latest Post on Homepage
+//============================
+#latest-post {
+    
+    //880px
+    @include responsive(m-tablet) {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    //600px
+    @include responsive(l-phone) {
+        text-align: center;
+    }
+}
+
+
+
+#grid-37 {
+    margin-bottom: 30px;
+    height: 360px;
+    
+    //600px
+    @include responsive(l-phone) {
+       height: 320px;
+    }
+    
+    
+    @include media(380px) {
+        height: 230px;
+    }
+    
+    article.tg-post-1 {
+        height: 360px !important;
+        
+        //600px
+        @include responsive(l-phone) {
+            height: 320px !important;
+        }
+        
+        @include media(380px) {
+            height: 230px !important;
+        }
+    }
+    
+    
+    /*a.tg-item-link {
+        background-color: rgba(0,0,0,0.2) !important;
+    }*/
+}
+
+
+.maren .tg-item-title a {
+    line-height: 18px !important;
+}
+
+
+.maren .tg-item-content-holder {
+    
+    @include media(580px) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+
 
 //BARS, SALONS, SHOPPING
 //===============================

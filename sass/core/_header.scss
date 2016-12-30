@@ -8,6 +8,11 @@
 #home-hero {
     background-position: center left !important;
     
+    //768px
+    @include responsive(tablet) {
+        background-position: center center !important;
+    }
+    
     h1 {
         text-transform: none !important;
         letter-spacing: normal !important;
@@ -23,6 +28,10 @@
             background-color: white;
             display: block;
             margin-top: 30px;
+            
+            @include media(420px) {
+                margin-top: 20px;
+            }
         }
     }
     
@@ -34,6 +43,10 @@
         font-weight: lighter !important;
         letter-spacing: 2px !important;
         display: block;
+        
+        @include media(420px) {
+            font-size: 30% !important;
+        }
     }
     
     .prefix {
@@ -43,6 +56,10 @@
     .suffix {
         color: $mint;
         margin-top: 22px;
+        
+        @include media(420px) {
+            margin-top: 18px;
+        }
     }
     
     
@@ -51,6 +68,20 @@
         font-family: $font-pt;
         color: $pink;
         font-size: 200% !important;
+        
+        @include media(680px) {
+            font-size: 160% !important;
+        }
+        
+        
+        @include media(420px) {
+            font-size: 130% !important;
+        }
+        
+        //320px
+        @include responsive(s-phone) {
+            font-size: 115% !important;
+        }
     }
 }
 
@@ -85,18 +116,6 @@
         font-family: $font-pt;
         color: $pink;
         font-size: 180% !important;
-    }
-    
-}
-
-
-
-//Header Typer
-//=================================
-.x-text-type {
-    
-    > .text {
-        
     }
     
 }

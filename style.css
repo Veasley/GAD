@@ -44,8 +44,16 @@ h1 {
   font-size: 300% !important;
   margin-top: 0 !important; }
 
+@media only screen and (max-width: 1200px) {
+  h2 {
+    font-size: 140.4% !important; } }
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 120.4% !important; } }
+
 h2.h4 {
-  background-color: #ececec;
+  background-color: #eeeeee;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   padding: 15px 30px !important; }
@@ -125,7 +133,7 @@ _mobile-padding {
     left: 0; }
 
 ._before._overlay-grey::before {
-  background-color: rgba(35, 35, 35, 0.8); }
+  background-color: rgba(35, 35, 35, 0.7); }
 
 /*!CORE*/
 /*========================
@@ -133,6 +141,9 @@ _mobile-padding {
 =========================*/
 #home-hero {
   background-position: center left !important; }
+  @media only screen and (max-width: 768px) {
+    #home-hero {
+      background-position: center center !important; } }
   #home-hero h1 {
     text-transform: none !important;
     letter-spacing: normal !important;
@@ -149,6 +160,9 @@ _mobile-padding {
       background-color: white;
       display: block;
       margin-top: 30px; }
+      @media only screen and (max-width: 420px) {
+        #home-hero h1::after {
+          margin-top: 20px; } }
   #home-hero .prefix,
   #home-hero .suffix {
     text-transform: uppercase;
@@ -156,16 +170,35 @@ _mobile-padding {
     font-weight: lighter !important;
     letter-spacing: 2px !important;
     display: block; }
+    @media only screen and (max-width: 420px) {
+      #home-hero .prefix,
+      #home-hero .suffix {
+        font-size: 30% !important; } }
   #home-hero .prefix {
     color: #e7e318; }
   #home-hero .suffix {
     color: #a7c49e;
     margin-top: 22px; }
+    @media only screen and (max-width: 420px) {
+      #home-hero .suffix {
+        margin-top: 18px; } }
   #home-hero .text,
   #home-hero .typed-cursor {
     font-family: "PT Serif", serif;
     color: #dfb2c4;
     font-size: 200% !important; }
+    @media only screen and (max-width: 680px) {
+      #home-hero .text,
+      #home-hero .typed-cursor {
+        font-size: 160% !important; } }
+    @media only screen and (max-width: 420px) {
+      #home-hero .text,
+      #home-hero .typed-cursor {
+        font-size: 130% !important; } }
+    @media only screen and (max-width: 320px) {
+      #home-hero .text,
+      #home-hero .typed-cursor {
+        font-size: 115% !important; } }
 
 .inner-page-hero h1 {
   text-transform: none !important;
@@ -219,7 +252,7 @@ _mobile-padding {
 .x-navbar-wrap {
   margin-bottom: 0 !important; }
   .x-navbar-wrap > .x-navbar {
-    border-bottom: 1px solid #ececec; }
+    border-bottom: 1px solid #eeeeee; }
 
 .x-navbar .desktop .x-nav > li > a {
   height: 77px !important; }
@@ -288,6 +321,46 @@ COMPONENTS - FEATURE BOX
 /*=============================
 	       HOMEPAGE
 =============================*/
+@media only screen and (max-width: 880px) {
+  #latest-post {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 600px) {
+  #latest-post {
+    text-align: center; } }
+
+#grid-37 {
+  margin-bottom: 30px;
+  height: 360px;
+  /*a.tg-item-link {
+        background-color: rgba(0,0,0,0.2) !important;
+    }*/ }
+  @media only screen and (max-width: 600px) {
+    #grid-37 {
+      height: 320px; } }
+  @media only screen and (max-width: 380px) {
+    #grid-37 {
+      height: 230px; } }
+  #grid-37 article.tg-post-1 {
+    height: 360px !important; }
+    @media only screen and (max-width: 600px) {
+      #grid-37 article.tg-post-1 {
+        height: 320px !important; } }
+    @media only screen and (max-width: 380px) {
+      #grid-37 article.tg-post-1 {
+        height: 230px !important; } }
+
+.maren .tg-item-title a {
+  line-height: 18px !important; }
+
+@media only screen and (max-width: 580px) {
+  .maren .tg-item-content-holder {
+    padding-left: 0 !important;
+    padding-right: 0 !important; } }
+
 #home-cta .x-column.x-1-3 {
   position: relative;
   background-size: cover;
@@ -348,14 +421,6 @@ COMPONENTS - FEATURE BOX
 /*=============================
 	   POST GALLERY
 =============================*/
-#grid-37 {
-  margin-bottom: 30px;
-  height: 360px; }
-  #grid-37 article.tg-post-1 {
-    height: 360px !important; }
-  #grid-37 .tg-item-overlay:hover {
-    background-color: rgba(0, 0, 0, 0.75); }
-
 #grid-63 .tg-cats-holder {
   display: none; }
 
@@ -449,10 +514,19 @@ h1.entry-title {
 /*=============================
 	       SIDEBAR
 =============================*/
+@media only screen and (max-width: 880px) {
+  #gad-sidebar.x-column.x-1-3,
+  .x-sidebar.x-column.x-1-3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    float: none; } }
+
 #gad-sidebar .x-author-box,
 .x-sidebar .x-author-box {
   border: none;
-  background-color: #ececec;
+  background-color: #eeeeee;
   text-align: center;
   padding: 0 0 35px !important; }
   #gad-sidebar .x-author-box > p,
@@ -509,7 +583,7 @@ h1.entry-title {
   overflow-y: scroll;
   margin-bottom: 30px;
   border: none !important;
-  background-color: #ececec; }
+  background-color: #eeeeee; }
   #text-4 .textwidget,
   #text-9 .textwidget {
     padding: 15px; }
@@ -537,18 +611,48 @@ h1.entry-title {
 
 #text-3,
 #text-8 {
-  background-color: #ececec; }
+  background-color: #eeeeee;
+  position: relative; }
   #text-3 h3,
   #text-8 h3 {
     font-size: 16px !important; }
   #text-3 .textwidget,
   #text-8 .textwidget {
     padding: 15px; }
+  @media only screen and (max-width: 1115px) {
+    #text-3 .sbi_header_img,
+    #text-8 .sbi_header_img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      float: none !important;
+      margin: 60px auto !important;
+      width: 85px; }
+      #text-3 .sbi_header_img img,
+      #text-8 .sbi_header_img img {
+        width: 85px; } }
+  #text-3 .sbi_header_text,
+  #text-8 .sbi_header_text {
+    padding-top: 0; }
+    @media only screen and (max-width: 1115px) {
+      #text-3 .sbi_header_text,
+      #text-8 .sbi_header_text {
+        width: 100% !important;
+        float: none;
+        margin: 70px auto 0 !important;
+        text-align: center; }
+        #text-3 .sbi_header_text > .sbi_bio,
+        #text-3 .sbi_header_text > h3,
+        #text-8 .sbi_header_text > .sbi_bio,
+        #text-8 .sbi_header_text > h3 {
+          margin: 0 auto !important;
+          float: none; } }
 
 #recent-posts-3,
 #recent-posts-5,
 #recent-posts-6 {
-  background-color: #ececec; }
+  background-color: #eeeeee; }
   #recent-posts-3 ul,
   #recent-posts-5 ul,
   #recent-posts-6 ul {
