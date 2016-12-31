@@ -28,7 +28,13 @@
     
     //600px
     @include responsive(l-phone) {
-       height: 320px;
+       height: 300px;
+    }
+    
+    
+    //480px
+    @include responsive(phone) {
+        height: 290px;
     }
     
     
@@ -36,13 +42,22 @@
         height: 230px;
     }
     
+    
+    
     article.tg-post-1 {
         height: 360px !important;
         
         //600px
         @include responsive(l-phone) {
-            height: 320px !important;
+            height: 300px !important;
         }
+        
+        
+        //480px
+        @include responsive(phone) {
+            height: 290px !important;
+        }
+        
         
         @include media(380px) {
             height: 230px !important;
@@ -63,11 +78,14 @@
 
 .maren .tg-item-content-holder {
     
-    @include media(580px) {
+    //600px
+    @include responsive(l-phone) {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
 }
+
+
 
 
 
@@ -87,6 +105,22 @@
         height: 260px;
         
         
+        @include media(815px) {
+            width: 100%;
+            display: block;
+            float: none;
+            margin-right: 0;
+            margin-bottom: 15px;
+            border-right: 0 !important;
+        }
+        
+        
+        //480px
+        @include responsive(phone) {
+            height: 200px;
+        }
+        
+        
         &:hover {
             background-blend-mode: multiply;
             
@@ -95,7 +129,7 @@
                 
                 > span > a {
                     color: white;
-                    padding: 30px;
+                    padding: 32px 15px;
                 }
             }
             
@@ -114,12 +148,20 @@
             transtion: all 0.15s linear;
             
             > span > a {
-                padding: 20px 30px;
+                padding: 22px 30px 20px;
                 display: block;
+                color: white;
+                
+                @include media(1000px) {
+                    font-size: 85% !important;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
             }
         }
     }
     
+  
     
     //Bars & Restuarants
     .bars-restaurant {

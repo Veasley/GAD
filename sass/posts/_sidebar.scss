@@ -12,6 +12,12 @@
             width: 70%;
             float: none;
         }
+        
+        
+        //600px
+        @include responsive(l-phone) {
+            width: 100%;
+        }
     }
     
     
@@ -22,6 +28,11 @@
         background-color: $l-grey;
         text-align: center;
         padding: 0 0 35px !important;
+        
+        //880px
+        @include responsive(m-tablet) {
+            margin-bottom: 0 !important;
+        }
         
         > p {
            margin: 0 35px 15px !important;
@@ -54,6 +65,12 @@
             float: none;
             border-radius: 50%;
             width: 50%;
+            
+            //480px
+            @include responsive(phone) {
+                @include center;
+                display: block;
+            }
         }
         
         
@@ -117,6 +134,11 @@
     margin-bottom: 30px;
     border: none !important;
     background-color: $l-grey;
+    
+    //880px
+    @include responsive(m-tablet) {
+        display: none;
+    }
 
     
     .textwidget {
@@ -126,8 +148,8 @@
     //Container
     .bwfbfeedcontent {
         font-family: 'PT Serif', serif !important;
-	   font-weight: lighter !important;
-	   font-style: italic !important;
+        font-weight: lighter !important;
+        font-style: italic !important;
     }
     
     
@@ -172,8 +194,14 @@
 //===============================
 #text-3,
 #text-8 {
-  background-color: $l-grey; 
+    background-color: $l-grey; 
     position: relative;
+    
+    //880px
+    @include responsive(m-tablet) {
+        display: none;
+    }
+    
     
     h3 {
         font-size: 16px !important;
@@ -232,6 +260,11 @@
 #recent-posts-5,
 #recent-posts-6 {
     background-color: $l-grey;
+    
+    //880px
+    @include responsive(m-tablet) {
+        display: none;
+    }
     
     //Post links
     ul {

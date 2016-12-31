@@ -226,7 +226,7 @@ _mobile-padding {
 =============================*/
 .x-colophon.top {
   background-color: #dfb2c4 !important;
-  padding: 3% 0 !important; }
+  padding: 45px 0 !important; }
   .x-colophon.top .widget h4.h-widget {
     background-color: transparent !important;
     padding: 0 !important;
@@ -340,7 +340,10 @@ COMPONENTS - FEATURE BOX
     }*/ }
   @media only screen and (max-width: 600px) {
     #grid-37 {
-      height: 320px; } }
+      height: 300px; } }
+  @media only screen and (max-width: 480px) {
+    #grid-37 {
+      height: 290px; } }
   @media only screen and (max-width: 380px) {
     #grid-37 {
       height: 230px; } }
@@ -348,7 +351,10 @@ COMPONENTS - FEATURE BOX
     height: 360px !important; }
     @media only screen and (max-width: 600px) {
       #grid-37 article.tg-post-1 {
-        height: 320px !important; } }
+        height: 300px !important; } }
+    @media only screen and (max-width: 480px) {
+      #grid-37 article.tg-post-1 {
+        height: 290px !important; } }
     @media only screen and (max-width: 380px) {
       #grid-37 article.tg-post-1 {
         height: 230px !important; } }
@@ -356,7 +362,7 @@ COMPONENTS - FEATURE BOX
 .maren .tg-item-title a {
   line-height: 18px !important; }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
   .maren .tg-item-content-holder {
     padding-left: 0 !important;
     padding-right: 0 !important; } }
@@ -369,13 +375,24 @@ COMPONENTS - FEATURE BOX
   background-blend-mode: overlay;
   opacity: .9;
   height: 260px; }
+  @media only screen and (max-width: 815px) {
+    #home-cta .x-column.x-1-3 {
+      width: 100%;
+      display: block;
+      float: none;
+      margin-right: 0;
+      margin-bottom: 15px;
+      border-right: 0 !important; } }
+  @media only screen and (max-width: 480px) {
+    #home-cta .x-column.x-1-3 {
+      height: 200px; } }
   #home-cta .x-column.x-1-3:hover {
     background-blend-mode: multiply; }
     #home-cta .x-column.x-1-3:hover h4 {
       height: 80px; }
       #home-cta .x-column.x-1-3:hover h4 > span > a {
         color: white;
-        padding: 30px; }
+        padding: 32px 15px; }
   #home-cta .x-column.x-1-3 h4 {
     margin: 0 !important;
     position: absolute;
@@ -387,8 +404,14 @@ COMPONENTS - FEATURE BOX
     -moz-transition: all 0.15s linear;
     transtion: all 0.15s linear; }
     #home-cta .x-column.x-1-3 h4 > span > a {
-      padding: 20px 30px;
-      display: block; }
+      padding: 22px 30px 20px;
+      display: block;
+      color: white; }
+      @media only screen and (max-width: 1000px) {
+        #home-cta .x-column.x-1-3 h4 > span > a {
+          font-size: 85% !important;
+          padding-left: 15px;
+          padding-right: 15px; } }
 
 #home-cta .bars-restaurant {
   background-image: url("/wp-content/uploads/2016/11/bar2.jpg"); }
@@ -523,12 +546,21 @@ h1.entry-title {
     width: 70%;
     float: none; } }
 
+@media only screen and (max-width: 600px) {
+  #gad-sidebar.x-column.x-1-3,
+  .x-sidebar.x-column.x-1-3 {
+    width: 100%; } }
+
 #gad-sidebar .x-author-box,
 .x-sidebar .x-author-box {
   border: none;
   background-color: #eeeeee;
   text-align: center;
   padding: 0 0 35px !important; }
+  @media only screen and (max-width: 880px) {
+    #gad-sidebar .x-author-box,
+    .x-sidebar .x-author-box {
+      margin-bottom: 0 !important; } }
   #gad-sidebar .x-author-box > p,
   .x-sidebar .x-author-box > p {
     margin: 0 35px 15px !important; }
@@ -550,6 +582,13 @@ h1.entry-title {
     float: none;
     border-radius: 50%;
     width: 50%; }
+    @media only screen and (max-width: 480px) {
+      #gad-sidebar .x-author-box .avatar,
+      .x-sidebar .x-author-box .avatar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: block; } }
   #gad-sidebar .x-author-box .x-author-info,
   .x-sidebar .x-author-box .x-author-info {
     margin-left: 0; }
@@ -584,6 +623,10 @@ h1.entry-title {
   margin-bottom: 30px;
   border: none !important;
   background-color: #eeeeee; }
+  @media only screen and (max-width: 880px) {
+    #text-4,
+    #text-9 {
+      display: none; } }
   #text-4 .textwidget,
   #text-9 .textwidget {
     padding: 15px; }
@@ -613,6 +656,10 @@ h1.entry-title {
 #text-8 {
   background-color: #eeeeee;
   position: relative; }
+  @media only screen and (max-width: 880px) {
+    #text-3,
+    #text-8 {
+      display: none; } }
   #text-3 h3,
   #text-8 h3 {
     font-size: 16px !important; }
@@ -653,6 +700,11 @@ h1.entry-title {
 #recent-posts-5,
 #recent-posts-6 {
   background-color: #eeeeee; }
+  @media only screen and (max-width: 880px) {
+    #recent-posts-3,
+    #recent-posts-5,
+    #recent-posts-6 {
+      display: none; } }
   #recent-posts-3 ul,
   #recent-posts-5 ul,
   #recent-posts-6 ul {
