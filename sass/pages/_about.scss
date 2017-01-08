@@ -2,30 +2,21 @@
 	     ABOUT PAGE
 =============================*/
 
-.about-page {
+//Hiding About section in right sidebar
+//========================================
+#about-lauren {
 	
-	//Expand full width
-	//====================
-	.x-column.x-2-3 {
-		
-		//880px
-	    @include responsive(m-tablet) {
-	        width: 100%;
-	        float: none;
-	        margin-right: 0;
-	        margin-bottom: 30px;
-	    }
+	//About owner
+	#text-2 {
+		display: none !important;
 	}
 	
-	//Display recent posts
-	#recent-posts-6 {
 	
-		//880px
-	    @include responsive(m-tablet) {
-	        display: block;
-	    }
+	//Facebook widget
+	#text-4 {
+		margin-top: 0 !important;
 	}
-
+	
 }
 
 

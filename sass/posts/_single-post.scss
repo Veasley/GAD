@@ -2,37 +2,60 @@
 	   SINGLE POSTS
 ============================*/
 
+.single-post {
+	
+	//Featured Image
+	//====================
+	.x-main.left .hentry .entry-featured {
+	    margin-top: 0 !important;
+	    
+	    > .entry-thumb img {
+	        width: 100%;
+	        height: auto;
+	    }
+	}
+	
 
-//Featured Image
-//====================
-.single-post .x-main.left .hentry .entry-featured {
-    margin-top: 0 !important;
-    
-    > .entry-thumb img {
-        width: 100%;
-        height: auto;
-    }
+	
+	//Title
+	//========================
+	h1.entry-title {
+	    font-size: 160% !important;
+	    line-height: 1.1 !important;
+	    
+	    @include media(1030px) {
+	        font-size: 130% !important;
+	    }
+	
+	}
+	
 }
 
 
 
 
-
-//Title
-h1.entry-title {
-    font-size: 190% !important;
-    line-height: 1.1 !important;
+//Welcome World Post
+//=====================================
+.blog #post-1 {
     
-    @include media(1030px) {
-        font-size: 130% !important;
+    //Change meta text to pink
+    .featured-meta {
+        color: $pink;
     }
-
+    
+    
+    //Remove view post button
+    .featured-view {
+        display: none !important;
+    }
 }
+
 
 
 
 
 //Article Nav
+//=================================
 .x-nav-articles {
 	
 	//767px
@@ -40,7 +63,7 @@ h1.entry-title {
         display: block !important;
         float: none;
         margin-left: 0 !important;
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 	
 	
@@ -59,7 +82,6 @@ h1.entry-title {
 	        color: $mint;
 	    }
 	}
-	
 }
 
 

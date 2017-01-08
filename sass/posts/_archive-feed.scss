@@ -1,85 +1,34 @@
 /*=============================
-	   POST GALLERY
+	   BLOG FEEDS
 =============================*/
 
-
-//Latest Blog Post on Homepage
-#grid-63 {
-    
-    //Homepage categories
-    .tg-cats-holder {
-        display: none;
-    }
-    
-}
-
-
-
-article {
-    
-    .tg-item-date,
-    .tg-cats-holder,
-    .tg-item-term {
-        color: $pink !important;
-    }
-    
-  
-    
-    //Post Summary
-    .tg-item-content-holder {
-        text-align: left;
-        
-        //Title and read more links
-        .tg-item-title a,
-        .tg-item-read-more a {
-            
-            &:hover {
-                color: $mint;
-            } 
-        }
-        
-        
-        //Excerpt
-        > p.tg-item-excerpt {
-            font-size: 15px !important;
-            line-height: 22px;
-        }
-        
-        
-        //Hiding author and number of comments
-        > .tg-item-footer {
-            display: none !important;
-        }
-        
-    }
-}
-
-
-
-
-//BLOG PAGE
-//=========================
 .blog,
 .search,
 .archive {
 	
+	//Articles
+	//========================
 	
+	//First posts
 	article:first-of-type {
 		border-top: none !important;
 		padding-top: 0 !important;
 	}
 	
+	
+	//Last posts
 	article:last-of-type {
 		border-bottom: none !important;
 	}
 
 	
+	//Hiding categories on blog feeds
 	.p-meta > span:first-of-type {
 		display: none;
 	}
 	
 	
-	//Search header/title on search page
+	//Hiding search header/title on search page
 	.x-header-landmark {
 		padding: 0 !important;
 		
@@ -87,8 +36,6 @@ article {
 			display: none;		
 		}
 	}
-	
-	
 }
 
 
@@ -98,6 +45,8 @@ article {
 .search,
 .archive {
     
+    
+    //Titles
     .entry-title {
         font-size: 130%;
         line-height: 1.5;
@@ -108,63 +57,43 @@ article {
     }
     
     
+    //Meta data
     .p-meta {
         font-size: 14px;
         letter-spacing: 1px;
     }
     
+    
+    //Post Excerpt
     .entry-content {
         font-size: 16px !important;
         line-height: 1.5;
-    }
-    
-    
-    
-    .x-main {
-	    width: 65.33332%;
-    }
-    
-    
-    .x-sidebar {
-	    width: 30.66666%;
+    } 
+}
+
+
+
+
+//Main Content - Left Column
+//============================
+.blog,
+.single-post,
+.search,
+.archive {
+	
+	.x-main {
+	    width: 65.33332% !important;
 	    
-	    //880px
-        @include responsive(m-tablet) {
-            @include center;
-            width: 70%;
+	    //979px
+        @include responsive(xl-tablet) {
+            width: 100% !important;
             float: none;
+            margin-right: 0;
+            margin-bottom: 30px;
         }
-        
-        
-        //600px
-        @include responsive(l-phone) {
-            width: 100%;
-        }
-	    
-	    &.right {
-		    padding-left: 0;
-	    }
-    }
+    }   
+	
 }
-
-
-
-
-//Welcome World Post
-#post-1 {
-    
-    //Change meta text to pink
-    .featured-meta {
-        color: $pink;
-    }
-    
-    
-    //Remove view post button
-    .featured-view {
-        display: none !important;
-    }
-}
-
 
 
 
@@ -173,21 +102,14 @@ article {
 //=========================
 .x-pagination {
     
-    a {
-        
-        &:hover {
-            background-color: $mint !important;
-        }
+    a:hover {
+        background-color: $mint !important;
     }
     
     
     //Active page
-    span {
-        
-        &.current {
-            background-color: $mint !important;
-        }
+    span.current {
+        background-color: $mint !important;
     }
     
 }
-

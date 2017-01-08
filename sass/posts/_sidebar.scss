@@ -1,25 +1,9 @@
 /*=============================
 	       SIDEBAR
 =============================*/
+
 #gad-sidebar,
 .x-sidebar {
-    
-    &.x-column.x-1-3 {
-        
-        //880px
-        @include responsive(m-tablet) {
-            @include center;
-            width: 70%;
-            float: none;
-        }
-        
-        
-        //600px
-        @include responsive(l-phone) {
-            width: 100%;
-        }
-    }
-    
     
     //Author box
     //=====================
@@ -103,160 +87,217 @@
             }
         }
     }
-}
-
-
-
-//Blog and Single Post Sidebar
-//==============================
-/*.x-sidebar {
-	
-	&.right {
-		padding-left: 0 !important;
+    
+    
+    //--------------------------------------------------------------------------------------------------------------------
+    
+    
+    //Widget headers
+	//==============================
+	.widget {
+	    
+	    h4.h-widget {
+	        border: none !important;
+	        background-color: $yellow;
+	        padding: 15px !important;
+	        color: white;
+	    }
+	    
 	}
-}*/
+	
+	
+	//--------------------------------------------------------------------------------------------------------------------
+	
+	
+	
+	//Facebook
+	//===============================
+	#text-4,
+	#text-9 {
+	    height: 460px;
+	    overflow-y: scroll;
+	    margin-bottom: 30px;
+	    border: none !important;
+	    background-color: $l-grey;
+	    
+	    //880px
+	    @include responsive(m-tablet) {
+	        display: none !important;
+	    }
+	
+	    
+	    .textwidget {
+	        padding: 15px;
+	    }
+	    
+	    //Container
+	    .bwfbfeedcontent {
+	        font-family: 'PT Serif', serif !important;
+	        font-weight: lighter !important;
+	        font-style: italic !important;
+	    }
+	    
+	    
+	    //Facebook user
+	    .bw-fb-feed-element .media-object {
+	        width: 60px;
+	    }
+	    
+	    
+	    //Title and days
+	    ul {
+	        
+	        > li {
+	            line-height: 20px;
+	            
+	            &:first-of-type {
+	                font-size: 18px;
+	            }
+	        }
+	    }
+	    
+	    
+	    //Feed text
+	    .feed-text {
+	        margin-bottom: 15px;
+	    }
+	    
+	    //Read more button
+	    .read-button {
+	
+	        &:hover {
+	            color: $pink;
+	            text-decoration: underline;
+	        }
+	    }
+	}
+	
+	
+	//--------------------------------------------------------------------------------------------------------------------
+	
+	
+	
+	//Instagram
+	//===============================
+	#text-3,
+	#text-8 {
+	    background-color: $l-grey; 
+	    position: relative;
+	    
+	    //880px
+	    @include responsive(m-tablet) {
+	        display: none !important;
+	    }
+	    
+	    
+	    h3 {
+	        font-size: 16px !important;
+	    }
+	    
+	    .textwidget {
+	        padding: 15px;
+	    }
+	    
+	    
+	    //Image
+	    .sbi_header_img {
+	        
+	        @include media(1115px) {
+	            position: absolute;
+	            left: 0;
+	            right: 0;
+	            top: 0;
+	            float: none !important;
+	            margin: 60px auto !important;
+	            width: 85px;
+	            
+	            img {
+	                 width: 85px;
+	            }
+	        }
+	    }
+	    
+	    
+	    //Text
+	    .sbi_header_text {
+	        padding-top: 0;
+	        
+	        @include media(1115px) {
+	            width: 100% !important;
+	            float: none;
+	            margin: 70px auto 0 !important;
+	            text-align: center;
+	            
+	            
+	            > .sbi_bio,
+	            > h3 {
+	                margin: 0 auto !important;
+	                float: none;
+	            }
+	        }
+	    }
+	}
+	
+	
+	//--------------------------------------------------------------------------------------------------------------------
+	
+	
+	//Recent Posts
+	//===========================
+	#recent-posts-3,
+	#recent-posts-5,
+	#recent-posts-6 {
+	    background-color: $l-grey;
+	    
+	    //Post links
+	    ul {
+	       padding: 15px; 
+	        
+	        > li {
+	            font-size: 16px !important;
+	            line-height: 18px;
+	            padding: 15px 0;
+	            
+	            > a {
+	                
+	                &:hover {
+	                    color: $pink;
+	                    text-decoration: underline;
+	                }
+	            }
+	        }
+	    }
+	    
+	    
+	    //Post Date
+	    .post-date {
+	        font-size: 13px !important;
+	    }
+	}
+
+} //End of #gad-sidebar & x-sidebar
 
 
 
 
-//Widget headers
-//==============================
-.widget {
-    
-    h4.h-widget {
-        border: none !important;
-        background-color: $yellow;
-        padding: 15px !important;
-        color: white;
-    }
-    
-}
 
-
-
-
-//Facebook
-//===============================
-#text-4,
-#text-9 {
-    height: 320px;
-    overflow-y: scroll;
-    margin-bottom: 30px;
-    border: none !important;
-    background-color: $l-grey;
-    
-    //880px
-    @include responsive(m-tablet) {
-        display: none;
-    }
-
-    
-    .textwidget {
-        padding: 15px;
-    }
-    
-    //Container
-    .bwfbfeedcontent {
-        font-family: 'PT Serif', serif !important;
-        font-weight: lighter !important;
-        font-style: italic !important;
-    }
-    
-    
-    //Facebook user
-    .bw-fb-feed-element .media-object {
-        width: 60px;
-    }
-    
-    
-    //Title and days
-    ul {
+//Custom Sidebar
+//==============================================
+#gad-sidebar {
+	
+	&.x-column.x-1-3 {
         
-        > li {
-            line-height: 20px;
-            
-            &:first-of-type {
-                font-size: 18px;
-            }
-        }
-    }
-    
-    
-    //Feed text
-    .feed-text {
-        margin-bottom: 15px;
-    }
-    
-    //Read more button
-    .read-button {
-
-        &:hover {
-            color: $pink;
-            text-decoration: underline;
-        }
-    }
-}
-
-
-
-
-//Instagram
-//===============================
-#text-3,
-#text-8 {
-    background-color: $l-grey; 
-    position: relative;
-    
-    //880px
-    @include responsive(m-tablet) {
-        display: none;
-    }
-    
-    
-    h3 {
-        font-size: 16px !important;
-    }
-    
-    .textwidget {
-        padding: 15px;
-    }
-    
-    
-    //Image
-    .sbi_header_img {
-        
-        @include media(1115px) {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            float: none !important;
-            margin: 60px auto !important;
-            width: 85px;
-            
-            img {
-                 width: 85px;
-            }
-        }
-    }
-    
-    
-    //Text
-    .sbi_header_text {
-        padding-top: 0;
-        
-        @include media(1115px) {
-            width: 100% !important;
+        //880px
+        @include responsive(m-tablet) {
+            @include center;
+            width: 70%;
             float: none;
-            margin: 70px auto 0 !important;
-            text-align: center;
-            
-            
-            > .sbi_bio,
-            > h3 {
-                margin: 0 auto !important;
-                float: none;
-            }
+        }
+        
+        
+        //600px
+        @include responsive(l-phone) {
+            width: 100%;
         }
     }
 }
@@ -264,40 +305,42 @@
 
 
 
-//Recent Posts
-//===========================
-#recent-posts-3,
-#recent-posts-5,
-#recent-posts-6 {
-    background-color: $l-grey;
+//X-theme Sidebar
+//==============================================
+.x-sidebar {
+    width: 30.66666% !important;
     
-    //880px
-    @include responsive(m-tablet) {
-        display: none;
+    //Hiding Facebook and Instagram widgets
+    #text-3,
+    #text-4 {
+	    
+	    //1024px
+	    @include responsive(xl-tablet) {
+	        display: none !important;
+	    }
+
     }
     
-    //Post links
-    ul {
-       padding: 15px; 
-        
-        > li {
-            font-size: 16px !important;
-            line-height: 18px;
-            padding: 15px 0;
-            
-            > a {
-                
-                &:hover {
-                    color: $pink;
-                    text-decoration: underline;
-                }
-            }
+    	    
+    &.right {
+	    padding-left: 0;
+    }
+    
+    
+    #text-2,
+    #recent-posts-3 {
+	    
+	    //1024px
+        @include responsive(xl-tablet) {
+            @include center;
+            width: 70% !important;
+            float: none;
+            margin-top: 1em;
         }
-    }
-    
-    
-    //Post Date
-    .post-date {
-        font-size: 13px !important;
+               
+        //600px
+        @include responsive(l-phone) {
+            width: 100% !important;
+        }
     }
 }

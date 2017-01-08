@@ -11,3 +11,34 @@ body {
 .site {
     background-color: white !important;
 }
+
+
+
+//Custome Sidebar Layout
+//========================================
+.custom-sidebar-layout {
+	
+	//Expand full width
+	//====================
+	.x-column.x-2-3 {
+		
+		//880px
+	    @include responsive(m-tablet) {
+	        width: 100%;
+	        float: none;
+	        margin-right: 0;
+	        margin-bottom: 30px;
+	    }
+	}
+	
+	//Display recent posts
+	#recent-posts-6,
+	#recent-posts-3  {
+	
+		//880px
+	    @include responsive(m-tablet) {
+	        display: block;
+	        margin-top: 1em;
+	    }
+	}
+}
