@@ -310,6 +310,19 @@
 .x-sidebar {
     width: 30.66666% !important;
     
+    //1024px
+    @include responsive(xl-tablet) {
+        @include center;
+        width: 70% !important;
+        float: none;
+        margin-top: 1em;
+    }
+           
+    //600px
+    @include responsive(l-phone) {
+        width: 100% !important;
+    }
+    
     //Hiding Facebook and Instagram widgets
     #text-3,
     #text-4 {
@@ -330,7 +343,7 @@
     #text-2,
     #recent-posts-3 {
 	    
-	    //1024px
+	    /*//1024px
         @include responsive(xl-tablet) {
             @include center;
             width: 70% !important;
@@ -341,6 +354,6 @@
         //600px
         @include responsive(l-phone) {
             width: 100% !important;
-        }
+        }*/
     }
 }

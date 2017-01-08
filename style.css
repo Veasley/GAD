@@ -895,14 +895,7 @@ _mobile-padding {
 .x-sidebar {
   width: 30.66666% !important; }
   @media only screen and (max-width: 1024px) {
-    .x-sidebar #text-3,
-    .x-sidebar #text-4 {
-      display: none !important; } }
-  .x-sidebar.right {
-    padding-left: 0; }
-  @media only screen and (max-width: 1024px) {
-    .x-sidebar #text-2,
-    .x-sidebar #recent-posts-3 {
+    .x-sidebar {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -910,6 +903,25 @@ _mobile-padding {
       float: none;
       margin-top: 1em; } }
   @media only screen and (max-width: 600px) {
-    .x-sidebar #text-2,
-    .x-sidebar #recent-posts-3 {
+    .x-sidebar {
       width: 100% !important; } }
+  @media only screen and (max-width: 1024px) {
+    .x-sidebar #text-3,
+    .x-sidebar #text-4 {
+      display: none !important; } }
+  .x-sidebar.right {
+    padding-left: 0; }
+  .x-sidebar #text-2,
+  .x-sidebar #recent-posts-3 {
+    /*//1024px
+        @include responsive(xl-tablet) {
+            @include center;
+            width: 70% !important;
+            float: none;
+            margin-top: 1em;
+        }
+               
+        //600px
+        @include responsive(l-phone) {
+            width: 100% !important;
+        }*/ }
