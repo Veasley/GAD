@@ -2,6 +2,18 @@
 	  CONTACT
 =========================*/
 
+//Hiding Facebook and instagram widgets
+//======================================
+#contact {
+	
+	#text-4,
+	#text-3 {
+	    display: none !important;
+	}
+}
+
+
+
 //Field lables
 .name_first,
 .name_last {
@@ -11,12 +23,18 @@
     }
 }
 
+
 //Submit button
 #gform_submit_button_1 {
-    
+    width: 30%;
     padding: 16px 30px !important;
         
     &:hover {
         background-color: $mint !important;
+    }
+    
+    //600px
+    @include responsive(l-phone) {
+        width: 100%;
     }
 }

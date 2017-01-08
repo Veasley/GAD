@@ -489,14 +489,22 @@ _mobile-padding {
 /*========================
 	  CONTACT
 =========================*/
+#contact #text-4,
+#contact #text-3 {
+  display: none !important; }
+
 .name_first > label,
 .name_last > label {
   display: none !important; }
 
 #gform_submit_button_1 {
+  width: 30%;
   padding: 16px 30px !important; }
   #gform_submit_button_1:hover {
     background-color: #a7c49e !important; }
+  @media only screen and (max-width: 600px) {
+    #gform_submit_button_1 {
+      width: 100%; } }
 
 /*!POST TYPES*/
 /*=============================
