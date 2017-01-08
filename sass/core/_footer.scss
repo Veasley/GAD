@@ -4,9 +4,24 @@
 
 .x-colophon.top {
     background-color: $pink !important;
-    padding: 45px 0 !important;    
+    padding: 45px 0 !important;
     
+    
+    
+    //Widget
+    //=======================
+    .widget {
+	    
+	    //979px
+        @include responsive(xl-tablet) {
+            margin-top: 2em !important;
+        }    
+    }
+    
+    
+        
     //Widget Titles
+    //=======================
     .widget h4.h-widget {
         background-color: transparent !important;
         padding: 0 !important;
@@ -15,6 +30,7 @@
     
     
     //Links
+    //========================
     a {
         color: white;
         
@@ -31,6 +47,7 @@
     
     
     //Widget Social Icons
+    //=========================
     .textwidget {
         
         > .x-container.width {
@@ -45,5 +62,13 @@
                 }
             }
         }
+    }
+    
+    
+    
+    //Copyrights
+    //=========================
+    .copyrights {
+	    line-height: 22px;
     }
 }

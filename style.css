@@ -248,6 +248,9 @@ _mobile-padding {
 .x-colophon.top {
   background-color: #dfb2c4 !important;
   padding: 45px 0 !important; }
+  @media only screen and (max-width: 1024px) {
+    .x-colophon.top .widget {
+      margin-top: 2em !important; } }
   .x-colophon.top .widget h4.h-widget {
     background-color: transparent !important;
     padding: 0 !important;
@@ -266,6 +269,8 @@ _mobile-padding {
       text-decoration: none; }
       .x-colophon.top .textwidget > .x-container.width > a:last-of-type {
         margin-right: 0; }
+  .x-colophon.top .copyrights {
+    line-height: 22px; }
 
 /*========================
 	NAVIGATION
