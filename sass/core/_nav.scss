@@ -3,6 +3,7 @@
 =========================*/
 
 //Navigation bar
+//==================
 .x-navbar-wrap {
     margin-bottom: 0 !important;
     
@@ -12,8 +13,18 @@
 }
 
 
+
+//Nav Links
+//=========================
 .x-navbar .desktop .x-nav > li > a {
     height: 77px !important;
+    
+    //1200px
+    @include responsive(s-laptop) {
+        padding-left: 22px !important;
+        padding-right: 22px !important;
+    }
+
     
     &:hover {
         box-shadow: 0 4px 0 0 $mint !important;

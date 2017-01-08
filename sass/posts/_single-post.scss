@@ -87,6 +87,26 @@
 
 
 
+//Social Share Icons
+//=================================
+.x-entry-share {
+	margin: 45px 0 0 0 !important;
+	
+	.x-share {
+		border-radius: 0 !important;
+		color: $pink;
+		background-color: transparent;
+		
+		&:hover {
+			background-color: $mint;
+		}
+		
+	}
+}
+
+
+
+
 
 
 
@@ -108,11 +128,17 @@
     
     //Submit Commet Button
     #entry-comment-submit {
+	    width: 30%;
         padding: 16px 30px !important;
         
         &:hover {
             background-color: $mint !important;
         }
+        
+        //600px
+	    @include responsive(l-phone) {
+	        width: 100%;
+	    }
     }
     
     

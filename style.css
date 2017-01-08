@@ -284,6 +284,10 @@ _mobile-padding {
 
 .x-navbar .desktop .x-nav > li > a {
   height: 77px !important; }
+  @media only screen and (max-width: 1200px) {
+    .x-navbar .desktop .x-nav > li > a {
+      padding-left: 22px !important;
+      padding-right: 22px !important; } }
   .x-navbar .desktop .x-nav > li > a:hover {
     box-shadow: 0 4px 0 0 #a7c49e !important; }
 
@@ -639,6 +643,15 @@ _mobile-padding {
   .x-nav-articles > a > i {
     color: #a7c49e; }
 
+.x-entry-share {
+  margin: 45px 0 0 0 !important; }
+  .x-entry-share .x-share {
+    border-radius: 0 !important;
+    color: #dfb2c4;
+    background-color: transparent; }
+    .x-entry-share .x-share:hover {
+      background-color: #a7c49e; }
+
 #comments .h-comments-title > span {
   font-size: 80% !important; }
 
@@ -646,9 +659,13 @@ _mobile-padding {
   font-size: 60% !important; }
 
 #comments #entry-comment-submit {
+  width: 30%;
   padding: 16px 30px !important; }
   #comments #entry-comment-submit:hover {
     background-color: #a7c49e !important; }
+  @media only screen and (max-width: 600px) {
+    #comments #entry-comment-submit {
+      width: 100%; } }
 
 #comments time {
   font-size: 12px;
