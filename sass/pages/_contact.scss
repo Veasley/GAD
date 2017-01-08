@@ -15,6 +15,7 @@
 
 
 //Field lables
+//=====================================
 .name_first,
 .name_last {
     
@@ -25,6 +26,7 @@
 
 
 //Submit button
+//=====================================
 #gform_submit_button_1 {
     width: 30%;
     padding: 16px 30px !important;
@@ -37,4 +39,34 @@
     @include responsive(l-phone) {
         width: 100%;
     }
+}
+
+
+
+
+//Social Call To Action
+//=====================================
+.social-cta {
+	
+	//767px
+    @include responsive(x-tablet) {
+        border: none !important;
+        border-bottom: 15px solid white !important;
+        
+        &:last-of-type {
+	        border-bottom: none !important;
+        }
+    }
+	
+	> .x-creative-cta {
+		
+		> .text {
+			
+			//768px
+		    @include responsive(tablet) {
+		        font-size: 24px !important;
+		    }
+			
+		}
+	}
 }

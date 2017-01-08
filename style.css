@@ -506,6 +506,17 @@ _mobile-padding {
     #gform_submit_button_1 {
       width: 100%; } }
 
+@media only screen and (max-width: 767px) {
+  .social-cta {
+    border: none !important;
+    border-bottom: 15px solid white !important; }
+    .social-cta:last-of-type {
+      border-bottom: none !important; } }
+
+@media only screen and (max-width: 768px) {
+  .social-cta > .x-creative-cta > .text {
+    font-size: 24px !important; } }
+
 /*!POST TYPES*/
 /*=============================
 	   BLOG FEEDS
