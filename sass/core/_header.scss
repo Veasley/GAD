@@ -78,6 +78,7 @@
             font-size: 130% !important;
         }
         
+        
         //320px
         @include responsive(s-phone) {
             font-size: 115% !important;
@@ -107,6 +108,17 @@
             background-color: white;
             display: block;
             margin-top: 30px;
+            
+             //768px
+	        @include responsive(tablet) { 
+		        margin-top: 20px;
+		    }
+		    
+		    
+		    //480px
+	        @include responsive(phone) {
+	            margin-top: 15px;
+	        }  
         }
     }
     
@@ -116,6 +128,24 @@
         font-family: $font-pt;
         color: $pink;
         font-size: 180% !important;
+        
+        //768px
+        @include responsive(tablet) { 
+	        font-size: 160% !important;
+	    }
+        
+               
+        //600px
+        @include responsive(l-phone) { 
+            font-size: 130% !important;
+        }
+        
+        
+        //480px
+        @include responsive(phone) {
+            font-size: 115% !important;
+        }   
+        
     }
     
 }

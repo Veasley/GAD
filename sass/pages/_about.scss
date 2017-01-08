@@ -2,6 +2,44 @@
 	     ABOUT PAGE
 =============================*/
 
+.about-page {
+	
+	//Expand full width
+	//====================
+	.x-column.x-2-3 {
+		
+		//880px
+	    @include responsive(m-tablet) {
+	        width: 100%;
+	        float: none;
+	        margin-right: 0;
+	        margin-bottom: 30px;
+	    }
+	}
+	
+	//Display recent posts
+	#recent-posts-6 {
+	
+		//880px
+	    @include responsive(m-tablet) {
+	        display: block;
+	    }
+	}
+
+}
+
+
+//About summary text
+//=========================
 .about-gad {
     font-size: 16px !important;
+    
+    img {
+	    
+	    //480px
+        @include responsive(phone) {
+	        @include center;
+            float: none;
+        }
+    }
 }

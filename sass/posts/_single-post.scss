@@ -15,29 +15,55 @@
 }
 
 
+
+
+
 //Title
 h1.entry-title {
     font-size: 190% !important;
     line-height: 1.1 !important;
+    
+    @include media(1030px) {
+        font-size: 130% !important;
+    }
+
 }
+
+
 
 
 //Article Nav
-.x-nav-articles > a {
-    border-color: $mint !important;
-    
-    &:hover {
-        background-color: $mint !important;
-        
-        > i {
-            color: white;
-        }
+.x-nav-articles {
+	
+	//767px
+    @include responsive(x-tablet) {
+        display: block !important;
+        float: none;
+        margin-left: 0 !important;
+        margin-bottom: 35px;
     }
-    
-    > i {
-        color: $mint;
-    }
+	
+	
+	> a {
+	    border-color: $mint !important;
+	    
+	    &:hover {
+	        background-color: $mint !important;
+	        
+	        > i {
+	            color: white;
+	        }
+	    }
+	    
+	    > i {
+	        color: $mint;
+	    }
+	}
+	
 }
+
+
+
 
 
 

@@ -10,6 +10,19 @@
 
 
 
+//Hiding items on mobile
+//=============================
+._mobile-hide {
+	
+	//880px
+    @include responsive(m-tablet) {
+        display: none !important;
+    }
+	
+}
+
+
+
 // WIDTHS
 //========================
 

@@ -44,20 +44,6 @@ h1 {
   font-size: 300% !important;
   margin-top: 0 !important; }
 
-@media only screen and (max-width: 1200px) {
-  h2 {
-    font-size: 140.4% !important; } }
-
-@media only screen and (max-width: 480px) {
-  h2 {
-    font-size: 120.4% !important; } }
-
-h2.h4 {
-  background-color: #eeeeee;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding: 15px 30px !important; }
-
 h3 {
   font-size: 160% !important; }
 
@@ -67,6 +53,10 @@ h3 {
 ._img-full {
   width: 100%;
   height: auto; }
+
+@media only screen and (max-width: 880px) {
+  ._mobile-hide {
+    display: none !important; } }
 
 ._max-1400 {
   max-width: 1400px; }
@@ -214,12 +204,30 @@ _mobile-padding {
     background-color: white;
     display: block;
     margin-top: 30px; }
+    @media only screen and (max-width: 768px) {
+      .inner-page-hero h1::after {
+        margin-top: 20px; } }
+    @media only screen and (max-width: 480px) {
+      .inner-page-hero h1::after {
+        margin-top: 15px; } }
 
 .inner-page-hero .text,
 .inner-page-hero .typed-cursor {
   font-family: "PT Serif", serif;
   color: #dfb2c4;
   font-size: 180% !important; }
+  @media only screen and (max-width: 768px) {
+    .inner-page-hero .text,
+    .inner-page-hero .typed-cursor {
+      font-size: 160% !important; } }
+  @media only screen and (max-width: 600px) {
+    .inner-page-hero .text,
+    .inner-page-hero .typed-cursor {
+      font-size: 130% !important; } }
+  @media only screen and (max-width: 480px) {
+    .inner-page-hero .text,
+    .inner-page-hero .typed-cursor {
+      font-size: 115% !important; } }
 
 /*=============================
 	       FOOTER
@@ -311,12 +319,31 @@ _mobile-padding {
   padding: 16px 30px !important;
   letter-spacing: 2px;
   font-size: 18px !important; }
+  @media only screen and (max-width: 600px) {
+    .x-btn {
+      width: 100%; } }
   .x-btn:hover {
     background-color: #a7c49e !important; }
 
 /*========================
 COMPONENTS - FEATURE BOX
 =========================*/
+/*========================
+	 GREY HEADER TITLES
+=========================*/
+.grey-header {
+  background-color: #eeeeee;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 15px 30px !important; }
+  @media only screen and (max-width: 1200px) {
+    .grey-header {
+      font-size: 140.4% !important;
+      text-align: center !important; } }
+  @media only screen and (max-width: 480px) {
+    .grey-header {
+      font-size: 120.4% !important; } }
+
 /*!PAGES*/
 /*=============================
 	       HOMEPAGE
@@ -425,8 +452,25 @@ COMPONENTS - FEATURE BOX
 /*=============================
 	     ABOUT PAGE
 =============================*/
+@media only screen and (max-width: 880px) {
+  .about-page .x-column.x-2-3 {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 30px; } }
+
+@media only screen and (max-width: 880px) {
+  .about-page #recent-posts-6 {
+    display: block; } }
+
 .about-gad {
   font-size: 16px !important; }
+  @media only screen and (max-width: 480px) {
+    .about-gad img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: none; } }
 
 /*========================
 	  CONTACT
@@ -463,20 +507,90 @@ article .tg-item-content-holder {
   article .tg-item-content-holder > .tg-item-footer {
     display: none !important; }
 
+.blog article:first-of-type,
+.search article:first-of-type,
+.archive article:first-of-type {
+  border-top: none !important;
+  padding-top: 0 !important; }
+
+.blog article:last-of-type,
+.search article:last-of-type,
+.archive article:last-of-type {
+  border-bottom: none !important; }
+
+.blog .p-meta > span:first-of-type,
+.search .p-meta > span:first-of-type,
+.archive .p-meta > span:first-of-type {
+  display: none; }
+
+.blog .x-header-landmark,
+.search .x-header-landmark,
+.archive .x-header-landmark {
+  padding: 0 !important; }
+  .blog .x-header-landmark > .h-landmark,
+  .search .x-header-landmark > .h-landmark,
+  .archive .x-header-landmark > .h-landmark {
+    display: none; }
+
 .blog .entry-title,
-.single-post .entry-title {
+.single-post .entry-title,
+.search .entry-title,
+.archive .entry-title {
   font-size: 130%;
   line-height: 1.5; }
+  @media only screen and (max-width: 380px) {
+    .blog .entry-title,
+    .single-post .entry-title,
+    .search .entry-title,
+    .archive .entry-title {
+      font-size: 100% !important; } }
 
 .blog .p-meta,
-.single-post .p-meta {
+.single-post .p-meta,
+.search .p-meta,
+.archive .p-meta {
   font-size: 14px;
   letter-spacing: 1px; }
 
 .blog .entry-content,
-.single-post .entry-content {
+.single-post .entry-content,
+.search .entry-content,
+.archive .entry-content {
   font-size: 16px !important;
   line-height: 1.5; }
+
+.blog .x-main,
+.single-post .x-main,
+.search .x-main,
+.archive .x-main {
+  width: 65.33332%; }
+
+.blog .x-sidebar,
+.single-post .x-sidebar,
+.search .x-sidebar,
+.archive .x-sidebar {
+  width: 30.66666%; }
+  @media only screen and (max-width: 880px) {
+    .blog .x-sidebar,
+    .single-post .x-sidebar,
+    .search .x-sidebar,
+    .archive .x-sidebar {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      float: none; } }
+  @media only screen and (max-width: 600px) {
+    .blog .x-sidebar,
+    .single-post .x-sidebar,
+    .search .x-sidebar,
+    .archive .x-sidebar {
+      width: 100%; } }
+  .blog .x-sidebar.right,
+  .single-post .x-sidebar.right,
+  .search .x-sidebar.right,
+  .archive .x-sidebar.right {
+    padding-left: 0; }
 
 #post-1 .featured-meta {
   color: #dfb2c4; }
@@ -502,6 +616,16 @@ article .tg-item-content-holder {
 h1.entry-title {
   font-size: 190% !important;
   line-height: 1.1 !important; }
+  @media only screen and (max-width: 1030px) {
+    h1.entry-title {
+      font-size: 130% !important; } }
+
+@media only screen and (max-width: 767px) {
+  .x-nav-articles {
+    display: block !important;
+    float: none;
+    margin-left: 0 !important;
+    margin-bottom: 35px; } }
 
 .x-nav-articles > a {
   border-color: #a7c49e !important; }
@@ -610,6 +734,12 @@ h1.entry-title {
       color: #dfb2c4;
       text-decoration: underline; }
 
+/*.x-sidebar {
+	
+	&.right {
+		padding-left: 0 !important;
+	}
+}*/
 .widget h4.h-widget {
   border: none !important;
   background-color: #e7e318;

@@ -56,14 +56,55 @@ article {
 
 
 
+
 //BLOG PAGE
 //=========================
 .blog,
-.single-post {
+.search,
+.archive {
+	
+	
+	article:first-of-type {
+		border-top: none !important;
+		padding-top: 0 !important;
+	}
+	
+	article:last-of-type {
+		border-bottom: none !important;
+	}
+
+	
+	.p-meta > span:first-of-type {
+		display: none;
+	}
+	
+	
+	//Search header/title on search page
+	.x-header-landmark {
+		padding: 0 !important;
+		
+		> .h-landmark {
+			display: none;		
+		}
+	}
+	
+	
+}
+
+
+
+.blog,
+.single-post,
+.search,
+.archive {
     
     .entry-title {
         font-size: 130%;
         line-height: 1.5;
+        
+        @include media(380px) {
+            font-size: 100% !important;
+        }
     }
     
     
@@ -76,7 +117,37 @@ article {
         font-size: 16px !important;
         line-height: 1.5;
     }
+    
+    
+    
+    .x-main {
+	    width: 65.33332%;
+    }
+    
+    
+    .x-sidebar {
+	    width: 30.66666%;
+	    
+	    //880px
+        @include responsive(m-tablet) {
+            @include center;
+            width: 70%;
+            float: none;
+        }
+        
+        
+        //600px
+        @include responsive(l-phone) {
+            width: 100%;
+        }
+	    
+	    &.right {
+		    padding-left: 0;
+	    }
+    }
 }
+
+
 
 
 //Welcome World Post
@@ -93,6 +164,8 @@ article {
         display: none !important;
     }
 }
+
+
 
 
 

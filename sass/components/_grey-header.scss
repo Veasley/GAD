@@ -1,0 +1,28 @@
+/*========================
+	 GREY HEADER TITLES
+=========================*/
+
+
+//Header  text with grey background
+//========================================
+.grey-header {	
+	
+	background-color: $l-grey;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 15px 30px !important;
+    
+    
+    //1200px
+    @include responsive(s-laptop) {
+        font-size: 140.4% !important;
+        text-align: center !important;
+    }
+    
+    
+    //480px
+    @include responsive(phone) {
+        font-size: 120.4% !important;
+    }
+    
+}
