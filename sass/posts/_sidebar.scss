@@ -244,9 +244,7 @@
 	
 	//Recent Posts
 	//===========================
-	#recent-posts-3,
-	#recent-posts-5,
-	#recent-posts-6 {
+	#recent-posts-3 {
 	    background-color: $l-grey;
 	    
 	    //Post links
@@ -308,21 +306,9 @@
 //X-theme Sidebar
 //==============================================
 .x-sidebar {
-    width: 30.66666% !important;
-    
-    //1024px
-    @include responsive(xl-tablet) {
-        @include center;
-        width: 70% !important;
-        float: none;
-        margin-top: 1em;
-    }
-           
-    //600px
-    @include responsive(l-phone) {
-        width: 100% !important;
-    }
-    
+    width: 30.66666% !important;    
+   
+
     //Hiding Facebook and Instagram widgets
     #text-3,
     #text-4 {
@@ -337,23 +323,35 @@
     	    
     &.right {
 	    padding-left: 0;
+	    
+	    //1024px
+	    @include responsive(xl-tablet) {
+	        @include center;
+	        width: 60% !important;
+	        float: none;
+	    }
+
+	    
+	    //979px
+	    @include responsive(l-tablet) {
+	        max-width: 70% !important;
+	    }
+	    
+	    
+	    //600px
+	    @include responsive(l-phone) {
+	        max-width: 100% !important;
+	    }
+
     }
     
     
     #text-2,
     #recent-posts-3 {
 	    
-	    /*//1024px
-        @include responsive(xl-tablet) {
-            @include center;
-            width: 70% !important;
-            float: none;
-            margin-top: 1em;
-        }
-               
-        //600px
-        @include responsive(l-phone) {
-            width: 100% !important;
-        }*/
+	    //1024px
+	    @include responsive(xl-tablet) {
+	        margin-top: 1em !important;
+	    }
     }
 }

@@ -13,8 +13,12 @@
     .widget {
 	    
 	    //979px
-        @include responsive(xl-tablet) {
+        @include responsive(l-tablet) {
             margin-top: 2em !important;
+            
+            &.widget_pages {
+	            margin-top: 0 !important;
+            }
         }    
     }
     
