@@ -24,6 +24,10 @@
     }
 }
 
+textarea {
+	font-size: 16px !important;
+}
+
 
 //Submit button
 //=====================================
@@ -34,6 +38,11 @@
     &:hover {
         background-color: $mint !important;
     }
+    
+    
+    @include media(641px) {
+	    padding: 14px 30px !important; 
+	}
     
     //600px
     @include responsive(l-phone) {
