@@ -60,6 +60,20 @@ h1 {
 h3 {
   font-size: 160% !important; }
 
+.x-text h1, .x-text h2, .x-text h3 {
+  line-height: 1.2; }
+  @media only screen and (max-width: 480px) {
+    .x-text h1, .x-text h2, .x-text h3 {
+      letter-spacing: 0 !important;
+      font-size: 110% !important; } }
+
+.x-text h4, .x-text h5, .x-text h6 {
+  line-height: 1.2; }
+  @media only screen and (max-width: 480px) {
+    .x-text h4, .x-text h5, .x-text h6 {
+      letter-spacing: 0 !important;
+      font-size: 100% !important; } }
+
 /*========================
 	UNIVERSAL - FONTS
 =========================*/
@@ -360,10 +374,14 @@ _mobile-padding {
   @media only screen and (max-width: 1200px) {
     .grey-header {
       font-size: 140.4% !important; } }
+  @media only screen and (max-width: 530px) {
+    .grey-header {
+      font-size: 120% !important;
+      padding: 15px !important; } }
   @media only screen and (max-width: 480px) {
     .grey-header {
-      font-size: 120.4% !important;
-      padding: 15px !important; } }
+      letter-spacing: 0 !important;
+      font-size: 100% !important; } }
 
 /*!PAGES*/
 /*=============================
@@ -405,6 +423,9 @@ _mobile-padding {
     @media only screen and (max-width: 380px) {
       #grid-37 article.tg-post-1 {
         height: 230px !important; } }
+  #grid-37 .tg-item-overlay {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    opacity: 1; }
 
 #grid-63 .tg-cats-holder {
   display: none; }
@@ -561,8 +582,8 @@ _mobile-padding {
 .single-post .entry-title,
 .search .entry-title,
 .archive .entry-title {
-  font-size: 130%;
-  line-height: 1.5; }
+  font-size: 120%;
+  line-height: 1.2; }
   @media only screen and (max-width: 380px) {
     .blog .entry-title,
     .single-post .entry-title,
@@ -616,16 +637,26 @@ _mobile-padding {
 
 .single-post h1.entry-title {
   font-size: 160% !important;
-  line-height: 1.1 !important; }
+  line-height: 1.2 !important; }
   @media only screen and (max-width: 1030px) {
     .single-post h1.entry-title {
       font-size: 130% !important; } }
+  @media only screen and (max-width: 380px) {
+    .single-post h1.entry-title {
+      font-size: 100% !important; } }
+
+.blog #post-1 .h-featured {
+  font-size: 20px !important; }
 
 .blog #post-1 .featured-meta {
   color: #dfb2c4; }
 
 .blog #post-1 .featured-view {
   display: none !important; }
+
+.blog #post-1 a.entry-thumb.featured:before {
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1; }
 
 @media only screen and (max-width: 767px) {
   .x-nav-articles {

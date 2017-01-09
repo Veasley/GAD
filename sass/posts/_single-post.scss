@@ -21,11 +21,16 @@
 	//========================
 	h1.entry-title {
 	    font-size: 160% !important;
-	    line-height: 1.1 !important;
+	    line-height: 1.2 !important;
 	    
 	    @include media(1030px) {
 	        font-size: 130% !important;
 	    }
+	    
+	    
+	    @include media(380px) {
+            font-size: 100% !important;
+        }
 	
 	}
 	
@@ -37,6 +42,10 @@
 //Welcome World Post
 //=====================================
 .blog #post-1 {
+	
+	.h-featured {
+		font-size: 20px !important;
+	}
     
     //Change meta text to pink
     .featured-meta {
@@ -48,6 +57,13 @@
     .featured-view {
         display: none !important;
     }
+    
+    
+    a.entry-thumb.featured:before {
+	    background-color: rgba(0,0,0,0.5);
+	    opacity: 1;
+    }
+    
 }
 
 

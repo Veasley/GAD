@@ -18,11 +18,16 @@
         font-size: 140.4% !important;
     }
     
+    @include media(530px) {
+	    font-size: 120% !important;
+	    padding: 15px !important;
+	}
+    
     
     //480px
     @include responsive(phone) {
-        font-size: 120.4% !important;
-        padding: 15px !important;
+        letter-spacing: 0 !important;
+        font-size: 100% !important;
     }
     
 }

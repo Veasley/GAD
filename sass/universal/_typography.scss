@@ -11,36 +11,11 @@ h1 {
 }
 
 
-
-
-// H2
-//========================
-h2 {
-    
-    
-    
-
-}
-
-
-
-
 //H3
 //========================
 h3 {
     font-size: 160% !important;
-	
 }
-
-
-
-
-// H4
-//========================
-h4 {
-	
-}
-
 
 
 
@@ -51,7 +26,24 @@ h4 {
 
 .x-text {
 	
-
+	h1,h2,h3 {
+		line-height: 1.2;
+		
+		//480px
+	    @include responsive(phone) {
+	        letter-spacing: 0 !important;
+	        font-size: 110% !important;
+	    }
+	}
+	
+	
+	h4,h5,h6 {
+		line-height: 1.2;
+		
+		//480px
+	    @include responsive(phone) {
+	        letter-spacing: 0 !important;
+	        font-size: 100% !important;
+	    }
+	}
 }
-
-

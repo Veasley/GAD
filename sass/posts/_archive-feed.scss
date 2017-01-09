@@ -48,8 +48,8 @@
     
     //Titles
     .entry-title {
-        font-size: 130%;
-        line-height: 1.5;
+        font-size: 120%;
+        line-height: 1.2;
         
         @include media(380px) {
             font-size: 100% !important;
